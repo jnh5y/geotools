@@ -68,6 +68,7 @@ public class GeneralMatrix implements XMatrix {
      */
     public GeneralMatrix(final int size) {
         mat = new DenseMatrix64F(size, size);
+        setIdentity();
     }
 
     /**
