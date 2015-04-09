@@ -27,6 +27,11 @@
 package org.geotools.referencing.operation.matrix;
 
 import org.junit.*;
+import org.opengis.geometry.Envelope;
+import org.opengis.referencing.cs.AxisDirection;
+
+import java.awt.geom.AffineTransform;
+
 import static org.junit.Assert.*;
 
 public class GeneralMatrixTest {
@@ -69,12 +74,24 @@ public class GeneralMatrixTest {
             1.2, 3.4, 5.6, 7.8, 9.0, 1.0
     };
 
+    private static AffineTransform affineTransform = new AffineTransform(1.2, 3.4, 5.6, 7.8, 9.0, 1.0);
+
+    private static double[][] affineMatrix = new double[][] {
+            {1.2, 5.6, 9.0},
+            {3.4, 7.8, 1.0},
+            {0.0, 0.0, 1.0}
+    };
+
+    private static GeneralMatrix generalAffineMatrix = new GeneralMatrix(affineMatrix);
+    private static GeneralMatrix matrix1 = new GeneralMatrix(array1);
+
+    AffineTransform2D affineTransform2D = new AffineTransform2D(affineTransform);
+
     @Test
     public void constructorTests() {
         GeneralMatrix squareId2 = new GeneralMatrix(2);
         double[][] array2 = squareId2.getElements();
         assertArrayEquals(array2, id2);
-
 
         GeneralMatrix squareId = new GeneralMatrix(4);
         double[][] array = squareId.getElements();
@@ -109,6 +126,32 @@ public class GeneralMatrixTest {
         double [][] gmsid2array = gmsid2.getElements();
         assertArrayEquals(gmsid2array, id2);
 
+        GeneralMatrix affineGeneralMatrix = new GeneralMatrix(affineTransform);
+        double [][] affineMatrixarray = affineGeneralMatrix.getElements();
+        assertArrayEquals(affineMatrixarray, affineMatrix);
+
+
+        // TODO: Test for  public GeneralMatrix(final Envelope srcRegion, final Envelope dstRegion)
+        // TODO: Test for  public GeneralMatrix(final AxisDirection[] srcAxis, final AxisDirection[] dstAxis)
+        // TODO: Test for  public GeneralMatrix(final Envelope srcRegion, final AxisDirection[] srcAxis, final Envelope dstRegion, final AxisDirection[] dstAxis)
+
+
+
+    }
+
+    @Test
+    public void getElementsTest() {
+        double [][] affineTransformElements = GeneralMatrix.getElements(affineTransform2D);
+        assertArrayEquals(affineTransformElements, affineMatrix);
+
+        double [][] generalAffineMatrixElements = GeneralMatrix.getElements(generalAffineMatrix);
+        assertArrayEquals(generalAffineMatrixElements, affineMatrix);
+    }
+
+    @Test
+    public void isAffineTest() {
+        assertTrue(generalAffineMatrix.isAffine());
+        assertFalse(matrix1.isAffine());
     }
 
 
