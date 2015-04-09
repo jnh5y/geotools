@@ -105,7 +105,9 @@ public class GeneralMatrixTest {
         GeneralMatrix gm2id = new GeneralMatrix(matrix2zero);
         assertArrayEquals(gm2id.getElements(), id2);
 
-
+        GeneralMatrix gmsid2 = new GeneralMatrix(squareId2);
+        double [][] gmsid2array = gmsid2.getElements();
+        assertArrayEquals(gmsid2array, id2);
 
     }
 
