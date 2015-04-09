@@ -36,6 +36,8 @@ import static org.junit.Assert.*;
 
 public class GeneralMatrixTest {
 
+    private static double EPSILON_TOLERANCE = 0.000001;
+
     private static double[][] zero2 = new double[][] {
             {0.0, 0.0},
             {0.0, 0.0}
@@ -86,6 +88,16 @@ public class GeneralMatrixTest {
             {1.2, 5.6, 9.0},
             {3.4, 7.8, 1.0},
             {0.0, 0.0, 1.0}
+    };
+
+    private static double [][] arrayA = new double[][] {
+            {2, 6},
+            {4, 7}
+    };
+
+    private static double [][] arrayAInverse = new double[][] {
+            {-0.7, 0.6},
+            {0.4, -0.2}
     };
 
     private static GeneralMatrix generalAffineMatrix = new GeneralMatrix(affineMatrix);
@@ -164,12 +176,33 @@ public class GeneralMatrixTest {
 
     @Test
     public void negateTest() {
+        GeneralMatrix gm = new GeneralMatrix(array1);
+        gm.negate();
 
+        assertArrayEquals(gm.getElements(), negativeArray1);
+
+        gm.negate();
+        assertArrayEquals(gm.getElements(), array1);
     }
 
     @Test
     public void invertTest() {
+        GeneralMatrix gm = new GeneralMatrix(id4);
+        gm.invert();
 
+        GeneralMatrix gm2 = new GeneralMatrix(id4);
+        GeneralMatrix.epsilonEquals(gm, gm2, EPSILON_TOLERANCE);
+
+        GeneralMatrix gma = new GeneralMatrix(arrayA);
+        gma.invert();
+
+        GeneralMatrix gmaInverse = new GeneralMatrix(arrayAInverse);
+
+        GeneralMatrix.epsilonEquals(gma, gmaInverse, EPSILON_TOLERANCE);
+
+        gma.invert();
+        GeneralMatrix gma2 = new GeneralMatrix(arrayA);
+        GeneralMatrix.epsilonEquals(gma, gma2, EPSILON_TOLERANCE);
     }
 
     @Test
