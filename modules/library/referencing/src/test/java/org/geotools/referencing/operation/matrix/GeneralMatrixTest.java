@@ -77,7 +77,7 @@ public class GeneralMatrixTest {
     };
 
     private static double[] array1flatten = new double[] {
-            1.2, 3.4, 5.6, 7.8, 9.0, 1.0
+            1.2, -3.4, -5.6, 7.8, 9.0, -1.0
     };
 
     private static AffineTransform affineTransform = new AffineTransform(1.2, 3.4, 5.6, 7.8, 9.0, 1.0);
