@@ -207,12 +207,44 @@ public class GeneralMatrixTest {
 
     @Test
     public void sizeTests() {
+        GeneralMatrix gm = new GeneralMatrix(id32);
 
+        assertEquals(gm.getNumRow(), 3);
+        assertEquals(gm.getNumCol(), 2);
     }
 
     @Test
     public void getSetElementTest() {
+        GeneralMatrix gm = new GeneralMatrix(id2);
 
+        assertEquals(gm.getElement(0, 0), 1.0, EPSILON_TOLERANCE);
+
+        double [] newRow = {10.11, 12.23};
+
+        gm.setRow(0, newRow);
+        assertEquals(gm.getElement(0, 0), 10.11, EPSILON_TOLERANCE);
+
+        gm.setElement(0, 0, 12.23);
+        assertEquals(gm.getElement(0, 0), 12.23, EPSILON_TOLERANCE);
+
+        gm.setZero();
+        assertEquals(gm.getElement(0, 0), 0.0, EPSILON_TOLERANCE);
+    }
+
+    @Test
+    public void identityTest() {
+        GeneralMatrix id = new GeneralMatrix(id4);
+
+        assertTrue(id.isIdentity());
+
+        id.setElement(0, 0, 1.0001);
+        //JNH: What?
+        assertTrue(GeneralMatrix.isIdentity(id, 0.01));
+
+        assertFalse(id.isIdentity());
+
+        id.setIdentity();
+        assertTrue(id.isIdentity());
     }
 
     @Test
@@ -233,7 +265,7 @@ public class GeneralMatrixTest {
     @Test
     public void copySubMatrixTest() {
 
-        // Also test getCol/Row
+        // TODO test getCol/Row
     }
 
     @Test
