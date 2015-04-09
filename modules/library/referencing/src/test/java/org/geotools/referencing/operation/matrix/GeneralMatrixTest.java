@@ -65,9 +65,15 @@ public class GeneralMatrixTest {
     };
 
     private static double[][] array1 = new double[][] {
-            {1.2, 3.4},
-            {5.6, 7.8},
-            {9.0, 1.0}
+            {1.2, -3.4},
+            {-5.6, 7.8},
+            {9.0, -1.0}
+    };
+
+    private static double[][] negativeArray1 = new double[][] {
+            {-1.2, 3.4},
+            {5.6, -7.8},
+            {-9.0, 1.0}
     };
 
     private static double[] array1flatten = new double[] {
@@ -149,10 +155,67 @@ public class GeneralMatrixTest {
     }
 
     @Test
-    public void isAffineTest() {
+    public void affineTest() {
         assertTrue(generalAffineMatrix.isAffine());
         assertFalse(matrix1.isAffine());
+
+        //TODO add test for toAffineTransform2d
     }
 
+    @Test
+    public void negateTest() {
+
+    }
+
+    @Test
+    public void invertTest() {
+
+    }
+
+    @Test
+    public void sizeTests() {
+
+    }
+
+    @Test
+    public void getSetElementTest() {
+
+    }
+
+    @Test
+    public void equalsHashcodeTest() {
+
+    }
+
+    @Test
+    public void loadTest() {
+        //TODO test load functions
+    }
+
+    @Test
+    public void toStringTest() {
+        // TODO test toString
+    }
+
+    @Test
+    public void copySubMatrixTest() {
+
+        // Also test getCol/Row
+    }
+
+    @Test
+    public void multiplicationTests() {
+        // TODO Test, multiply, mul(GM), mul(GM,GM)
+    }
+
+    @Test
+    public void setSizeTest() {
+
+    }
+
+    @Test
+    public void subTests() {
+
+    }
 
 }
