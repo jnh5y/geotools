@@ -236,9 +236,17 @@ public class ImageIOExt {
                     ImageInputStream stream = null;
                     try {
                         stream = spi.createInputStreamInstance(input, usecache, ImageIO.getCacheDirectory());
-                        break;
-                    } catch (IOException e) {
-                        return null;
+                        if (stream != null){
+                            try {
+                                stream.close();
+                                return spi;
+                            } catch (Throwable t){
+                                //eat exception
+                            }
+                        }
+                    } catch (Exception e) {
+                        System.out.println("here");
+                        //return null;
                     } finally {
                         //Make sure to close the created stream
                         if (stream != null){
@@ -250,12 +258,12 @@ public class ImageIOExt {
                         }
                     }
                 } else {
-                    break;
+                  return spi;
                 }
             }
         }
     
-        return spi;
+        return null;
     }
     
     /**
