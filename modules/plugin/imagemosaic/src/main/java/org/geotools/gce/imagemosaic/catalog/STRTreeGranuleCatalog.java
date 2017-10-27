@@ -54,10 +54,10 @@ import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.Filter;
 import org.opengis.geometry.BoundingBox;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.index.ItemVisitor;
-import com.vividsolutions.jts.index.strtree.STRtree;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.index.ItemVisitor;
+import org.locationtech.jts.index.strtree.STRtree;
 
 /**
  * This class simply builds an SRTREE spatial index in memory for fast indexed geometric queries.
@@ -114,7 +114,7 @@ class STRTreeGranuleCatalog extends GranuleCatalog {
         /*
          * (non-Javadoc)
          *
-         * @see com.vividsolutions.jts.index.ItemVisitor#visitItem(java.lang.Object)
+         * @see org.locationtech.jts.index.ItemVisitor#visitItem(java.lang.Object)
          */
         public void visitItem(Object o) {
             if (maxGranules > 0 && granuleIndex > maxGranules) {
@@ -251,7 +251,7 @@ class STRTreeGranuleCatalog extends GranuleCatalog {
     /*
      * (non-Javadoc)
      *
-     * @see org.geotools.gce.imagemosaic.FeatureIndex#findFeatures(com.vividsolutions.jts.geom.Envelope)
+     * @see org.geotools.gce.imagemosaic.FeatureIndex#findFeatures(org.locationtech.jts.geom.Envelope)
      */
     @SuppressWarnings("unchecked")
     public List<GranuleDescriptor> getGranules(final BoundingBox envelope) throws IOException {
@@ -270,7 +270,7 @@ class STRTreeGranuleCatalog extends GranuleCatalog {
     /*
      * (non-Javadoc)
      *
-     * @see org.geotools.gce.imagemosaic.FeatureIndex#findFeatures(com.vividsolutions.jts.geom.Envelope, com.vividsolutions.jts.index.ItemVisitor)
+     * @see org.geotools.gce.imagemosaic.FeatureIndex#findFeatures(org.locationtech.jts.geom.Envelope, org.locationtech.jts.index.ItemVisitor)
      */
     public void getGranules(final BoundingBox envelope, final GranuleCatalogVisitor visitor)
             throws IOException {

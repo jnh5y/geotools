@@ -35,8 +35,8 @@ import org.opengis.filter.spatial.BBOX;
 
 import com.esri.sde.sdk.client.SeLayer;
 import com.esri.sde.sdk.client.SeVersion;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.WKTReader;
 
 /**
  * Test suite for the {@link ArcSDEQuery} query wrapper

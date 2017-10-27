@@ -24,7 +24,7 @@ import org.opengis.feature.Attribute;
 import org.opengis.feature.ComplexAttribute;
 import org.opengis.feature.Feature;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 
 public class ComplexFeatureBuilderTest {
     private static ComplexAttribute getAMineNameProperty(String name, boolean isPreferred) {

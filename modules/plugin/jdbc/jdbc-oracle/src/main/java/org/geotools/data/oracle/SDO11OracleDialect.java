@@ -25,8 +25,8 @@ import java.sql.Types;
 
 import org.geotools.jdbc.JDBCDataStore;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
 
 /**
  * This dialect uses the Oracle 11 specific sdoapi.jar API, which is touted to

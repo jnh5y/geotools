@@ -33,8 +33,8 @@ import org.geotools.geometry.jts.MultiCurve;
 import org.geotools.xml.Configuration;
 import org.geotools.xml.Parser;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.LineString;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.LineString;
 
 public class GML3CurveParsingTest extends GML3TestSupport {
 

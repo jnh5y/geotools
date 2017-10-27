@@ -33,7 +33,7 @@ import org.geotools.caching.grid.spatialindex.store.MemoryStorage;
 import org.geotools.data.memory.MemoryDataStore;
 import org.geotools.feature.FeatureCollection;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 
 /**

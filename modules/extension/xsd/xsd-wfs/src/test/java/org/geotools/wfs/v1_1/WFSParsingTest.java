@@ -62,7 +62,7 @@ import org.opengis.filter.capability.SpatialOperators;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 
 import net.opengis.ows10.DCPType;
 import net.opengis.ows10.KeywordsType;

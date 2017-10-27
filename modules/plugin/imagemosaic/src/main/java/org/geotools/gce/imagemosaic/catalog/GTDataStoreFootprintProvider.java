@@ -35,7 +35,7 @@ import org.opengis.filter.Filter;
 import org.opengis.filter.FilterVisitor;
 import org.opengis.filter.expression.PropertyName;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * A {@link FootprintGeometryProvider} matching the current feature with the geometry of one feature in a GT data store. The filter must use property

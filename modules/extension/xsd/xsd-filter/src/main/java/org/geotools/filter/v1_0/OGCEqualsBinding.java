@@ -17,7 +17,7 @@
 package org.geotools.filter.v1_0;
 
 import javax.xml.namespace.QName;
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 import org.opengis.filter.FilterFactory2;
 import org.opengis.filter.expression.Expression;
 import org.opengis.filter.spatial.Equals;

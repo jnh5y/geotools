@@ -36,13 +36,13 @@ import org.opengis.geometry.DirectPosition;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.operation.MathTransform;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.geom.LinearRing;
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.geom.LinearRing;
+import org.locationtech.jts.geom.Point;
 
 /**
  * Unit tests for the JTS utility class.
@@ -116,7 +116,7 @@ public class JTSTest extends JTSTestBase {
     public void toGeometry_Envelope() {
         Envelope refEnv = new Envelope(-10, 10, -5, 5);
         Geometry geom = JTS.toGeometry(refEnv);
-        assertTrue(geom instanceof com.vividsolutions.jts.geom.Polygon);
+        assertTrue(geom instanceof org.locationtech.jts.geom.Polygon);
         
         Envelope geomEnv = geom.getEnvelopeInternal();
         assertEquals(-10.0, geomEnv.getMinX(), TOL);
@@ -129,7 +129,7 @@ public class JTSTest extends JTSTestBase {
     public void toGeometry_ReferencedEnvelope() {
         ReferencedEnvelope refEnv = new ReferencedEnvelope(-10, 10, -5, 5, DefaultGeographicCRS.WGS84);
         Geometry geom = JTS.toGeometry(refEnv);
-        assertTrue(geom instanceof com.vividsolutions.jts.geom.Polygon);
+        assertTrue(geom instanceof org.locationtech.jts.geom.Polygon);
         
         Envelope geomEnv = geom.getEnvelopeInternal();
         assertEquals(-10.0, geomEnv.getMinX(), TOL);
@@ -164,7 +164,7 @@ public class JTSTest extends JTSTestBase {
     public void toGeometry_BoundingBox() {
         BoundingBox bbox = new ReferencedEnvelope(-10, 10, -5, 5, null);
         Geometry geom = JTS.toGeometry(bbox);
-        assertTrue(geom instanceof com.vividsolutions.jts.geom.Polygon);
+        assertTrue(geom instanceof org.locationtech.jts.geom.Polygon);
         
         Envelope geomEnv = geom.getEnvelopeInternal();
         assertEquals(-10.0, geomEnv.getMinX(), TOL);
@@ -324,14 +324,14 @@ public class JTSTest extends JTSTestBase {
         final Shape shape = new java.awt.Polygon(xPoints, yPoints, nPoints);
         final LinearRing geom = (LinearRing) JTS.toGeometry(shape);
         final GeometryFactory factory = new GeometryFactory();
-        final com.vividsolutions.jts.geom.Polygon polygon = factory.createPolygon(geom);
+        final org.locationtech.jts.geom.Polygon polygon = factory.createPolygon(geom);
         assertFalse(polygon.isValid());
 
-        final List<com.vividsolutions.jts.geom.Polygon> validPols = JTS.makeValid(polygon, false);
+        final List<org.locationtech.jts.geom.Polygon> validPols = JTS.makeValid(polygon, false);
 
         assertEquals(2, validPols.size());
-        com.vividsolutions.jts.geom.Polygon polygon1 = validPols.get(0);
-        com.vividsolutions.jts.geom.Polygon polygon2 = validPols.get(1);
+        org.locationtech.jts.geom.Polygon polygon1 = validPols.get(0);
+        org.locationtech.jts.geom.Polygon polygon2 = validPols.get(1);
         assertEquals(5, polygon1.getNumPoints());
         assertEquals(5, polygon2.getNumPoints());
     }

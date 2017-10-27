@@ -5,8 +5,8 @@ import org.eclipse.emf.query.conditions.IDataTypeAdapter;
 import org.geotools.data.efeature.DataBuilder;
 import org.geotools.data.efeature.DataTypes;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.ParseException;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.ParseException;
 
 /**
  * An Adapter class to be used to extract from -adapt- the 

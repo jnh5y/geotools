@@ -22,9 +22,9 @@ import java.util.Arrays;
 import java.util.Set;
 
 // JTS dependencies
-import com.vividsolutions.jts.geom.CoordinateSequenceFactory;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.PrecisionModel;
+import org.locationtech.jts.geom.CoordinateSequenceFactory;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.PrecisionModel;
 
 // Geotools dependencies
 import org.geotools.factory.GeoTools;

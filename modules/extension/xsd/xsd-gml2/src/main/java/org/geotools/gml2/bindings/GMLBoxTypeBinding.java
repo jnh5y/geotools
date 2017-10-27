@@ -27,9 +27,9 @@ import org.geotools.xml.ElementInstance;
 import org.geotools.xml.Node;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.Envelope;
 
 
 /**
@@ -86,7 +86,7 @@ public class GMLBoxTypeBinding extends AbstractComplexBinding {
     /**
      * <!-- begin-user-doc -->
      * This method returns an object of type
-     * @link com.vividsolutions.jts.geom.Envelope.
+     * @link org.locationtech.jts.geom.Envelope.
      * <!-- end-user-doc -->
      *
      * @generated modifiable

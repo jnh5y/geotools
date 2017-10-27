@@ -28,9 +28,9 @@ import org.geotools.xml.Node;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.CoordinateSequenceFactory;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.CoordinateSequenceFactory;
 
 
 /**
@@ -94,7 +94,7 @@ public class GMLCoordinatesTypeBinding extends AbstractComplexBinding {
 
     /**
      * <!-- begin-user-doc -->
-     * Returns an object of type {@see com.vividsolutions.jts.geom.CoordinateSequence}
+     * Returns an object of type {@see org.locationtech.jts.geom.CoordinateSequence}
      * TODO: this method should do more validation of the string
      * <!-- end-user-doc -->
      *

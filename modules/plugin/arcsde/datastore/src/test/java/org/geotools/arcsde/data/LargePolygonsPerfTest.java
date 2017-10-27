@@ -42,8 +42,8 @@ import com.esri.sde.sdk.client.SeRow;
 import com.esri.sde.sdk.client.SeShape;
 import com.esri.sde.sdk.client.SeSqlConstruct;
 import com.esri.sde.sdk.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.util.Stopwatch;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.util.Stopwatch;
 
 /**
  * This is a legacy benchmarking suite I'm using to assess the performance of some very large

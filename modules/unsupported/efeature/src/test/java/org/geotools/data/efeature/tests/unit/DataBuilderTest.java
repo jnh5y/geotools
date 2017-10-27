@@ -25,8 +25,8 @@ import org.geotools.data.efeature.adapters.GeometryAdapter;
 import org.geotools.data.efeature.adapters.WKBAdapter;
 import org.geotools.data.efeature.adapters.WKTAdapter;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.ParseException;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.ParseException;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

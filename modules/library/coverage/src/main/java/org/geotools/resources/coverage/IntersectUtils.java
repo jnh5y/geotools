@@ -17,12 +17,12 @@
 
 package org.geotools.resources.coverage;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryCollection;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.MultiPolygon;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.geom.util.AffineTransformation;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryCollection;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.MultiPolygon;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.util.AffineTransformation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -191,7 +191,7 @@ public class IntersectUtils {
         if(geometry == null)
             return null;
 
-        if(geometry instanceof com.vividsolutions.jts.geom.Polygon) {
+        if(geometry instanceof org.locationtech.jts.geom.Polygon) {
             return geometry;
 
         } else if(geometry instanceof MultiPolygon) {
@@ -200,13 +200,13 @@ public class IntersectUtils {
             return geometry.getFactory().createMultiPolygon(unrollGeometries(mp).toArray(new Polygon[0]));
 
         } else if(geometry instanceof GeometryCollection) {
-            List<com.vividsolutions.jts.geom.Polygon> ret = new ArrayList<Polygon>();
+            List<org.locationtech.jts.geom.Polygon> ret = new ArrayList<Polygon>();
 
             GeometryCollection gc = (GeometryCollection)geometry;
             for (int i = 0; i < gc.getNumGeometries(); i++) {
                 Geometry g = gc.getGeometryN(i);
-                if(g instanceof com.vividsolutions.jts.geom.Polygon) {
-                    ret.add((com.vividsolutions.jts.geom.Polygon) g );
+                if(g instanceof org.locationtech.jts.geom.Polygon) {
+                    ret.add((org.locationtech.jts.geom.Polygon) g );
                 } else if(g instanceof MultiPolygon) {
                     ret.addAll(unrollGeometries((MultiPolygon)g));
                 } else {
@@ -219,11 +219,11 @@ public class IntersectUtils {
         }
     }
 
-    private static List<com.vividsolutions.jts.geom.Polygon> unrollGeometries(MultiPolygon mp) {
-        List<com.vividsolutions.jts.geom.Polygon> ret = new ArrayList<Polygon>();
+    private static List<org.locationtech.jts.geom.Polygon> unrollGeometries(MultiPolygon mp) {
+        List<org.locationtech.jts.geom.Polygon> ret = new ArrayList<Polygon>();
 
         for (int i = 0; i < mp.getNumGeometries(); i++) {
-            com.vividsolutions.jts.geom.Polygon g = (com.vividsolutions.jts.geom.Polygon)mp.getGeometryN(i);
+            org.locationtech.jts.geom.Polygon g = (org.locationtech.jts.geom.Polygon)mp.getGeometryN(i);
             ret.add(g);
         }
 

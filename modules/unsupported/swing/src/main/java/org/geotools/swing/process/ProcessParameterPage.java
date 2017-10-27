@@ -39,7 +39,7 @@ import org.geotools.swing.wizard.JPage;
 import org.geotools.swing.wizard.ParamField;
 import org.opengis.feature.type.Name;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * This page is responsible making a user interface based on the provided ProcessFactory.

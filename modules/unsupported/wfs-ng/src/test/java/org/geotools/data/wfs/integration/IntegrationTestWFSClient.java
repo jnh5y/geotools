@@ -83,7 +83,7 @@ import org.opengis.filter.identity.FeatureId;
 import org.picocontainer.MutablePicoContainer;
 import org.xml.sax.EntityResolver;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 
 public class IntegrationTestWFSClient extends WFSClient {
 

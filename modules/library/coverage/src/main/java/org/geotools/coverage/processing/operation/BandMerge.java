@@ -79,7 +79,7 @@ import org.opengis.referencing.operation.MathTransform2D;
 import org.opengis.referencing.operation.TransformException;
 import org.opengis.util.InternationalString;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * {@link OperationJAI} subclass used for executing the "Merge" of multiple coverages into a single coverage with multiple bands. This operation can

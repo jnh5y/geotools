@@ -21,7 +21,7 @@ import java.io.StringReader;
 
 import org.opengis.feature.simple.SimpleFeature;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 import junit.framework.TestCase;
 

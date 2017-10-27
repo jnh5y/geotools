@@ -28,8 +28,8 @@ import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.filter.Filter;
 import org.opengis.filter.FilterFactory;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
 /**
  * @author Pati
  *
@@ -66,7 +66,7 @@ public class TouchesIntegrity extends RelationIntegrity {
 	
 	
 	/* (non-Javadoc)
-	 * @see org.geotools.validation.IntegrityValidation#validate(java.util.Map, com.vividsolutions.jts.geom.Envelope, org.geotools.validation.ValidationResults)
+	 * @see org.geotools.validation.IntegrityValidation#validate(java.util.Map, org.locationtech.jts.geom.Envelope, org.geotools.validation.ValidationResults)
 	 */
 	public boolean validate(Map layers, Envelope envelope,
 			ValidationResults results) throws Exception 

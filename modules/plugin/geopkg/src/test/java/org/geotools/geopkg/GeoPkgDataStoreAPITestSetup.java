@@ -21,9 +21,9 @@ import java.sql.SQLException;
 import org.geotools.geometry.jts.GeometryBuilder;
 import org.geotools.jdbc.JDBCDataStoreAPITestSetup;
 
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.geom.MultiLineString;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.geom.MultiLineString;
+import org.locationtech.jts.geom.Polygon;
 
 /**
  * 

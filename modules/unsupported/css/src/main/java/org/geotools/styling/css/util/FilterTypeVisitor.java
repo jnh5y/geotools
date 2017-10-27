@@ -67,7 +67,7 @@ import org.opengis.filter.temporal.TEquals;
 import org.opengis.filter.temporal.TOverlaps;
 import org.opengis.parameter.Parameter;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Applies duck typing to properties in filters, aggregating the types found in the {@link TypeAggregator}

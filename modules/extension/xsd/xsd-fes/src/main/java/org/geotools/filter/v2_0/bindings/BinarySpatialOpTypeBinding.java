@@ -27,7 +27,7 @@ import org.opengis.filter.expression.Literal;
 import org.opengis.filter.spatial.BinarySpatialOperator;
 import org.xml.sax.ContentHandler;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * <pre>

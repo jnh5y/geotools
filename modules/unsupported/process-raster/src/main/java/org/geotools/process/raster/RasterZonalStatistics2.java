@@ -40,8 +40,8 @@ import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.parameter.ParameterValueGroup;
 
 import com.sun.media.jai.util.SunTileCache;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.Polygon;
 
 
 /**

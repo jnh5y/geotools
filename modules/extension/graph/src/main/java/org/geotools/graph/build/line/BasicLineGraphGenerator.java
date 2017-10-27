@@ -20,8 +20,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.vividsolutions.jts.index.bintree.Bintree;
-import com.vividsolutions.jts.index.bintree.Interval;
+import org.locationtech.jts.index.bintree.Bintree;
+import org.locationtech.jts.index.bintree.Interval;
 import org.geotools.graph.build.GraphBuilder;
 import org.geotools.graph.build.GraphGenerator;
 import org.geotools.graph.build.basic.BasicGraphBuilder;
@@ -30,8 +30,8 @@ import org.geotools.graph.structure.Graph;
 import org.geotools.graph.structure.Graphable;
 import org.geotools.graph.structure.Node;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.LineSegment;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.LineSegment;
 
 /**
  * An implementation of GraphGenerator used to generate a graph representing a
@@ -52,8 +52,8 @@ import com.vividsolutions.jts.geom.LineSegment;
  *
  * @see org.geotools.graph.structure.line.BasicXYNode
  * @see org.geotools.graph.structure.basic.BasicEdge
- * @see com.vividsolutions.jts.geom.LineSegment
- * @see com.vividsolutions.jts.geom.Coordinate
+ * @see org.locationtech.jts.geom.LineSegment
+ * @see org.locationtech.jts.geom.Coordinate
  * 
  * @author Justin Deoliveira, Refractions Research Inc, jdeolive@refractions.net
  * @author Anders Bakkevold, Bouvet AS, bakkedev@gmail.com

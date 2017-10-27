@@ -36,8 +36,8 @@ import org.opengis.filter.Filter;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
 
 
 /**

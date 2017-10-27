@@ -37,7 +37,7 @@ import org.geotools.text.Text;
 import org.opengis.feature.type.Name;
 import org.opengis.util.ProgressListener;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * This page is responsible for actually executing the process with the given parameters and then

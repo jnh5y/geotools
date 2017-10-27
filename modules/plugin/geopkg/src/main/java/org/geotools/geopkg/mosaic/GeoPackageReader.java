@@ -76,7 +76,7 @@ import org.opengis.parameter.ParameterValue;
 import org.opengis.referencing.ReferenceIdentifier;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 import it.geosolutions.jaiext.JAIExt;
 import it.geosolutions.jaiext.mosaic.MosaicRIF;

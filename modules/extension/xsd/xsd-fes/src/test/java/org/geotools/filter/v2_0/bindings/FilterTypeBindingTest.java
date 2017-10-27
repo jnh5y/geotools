@@ -39,7 +39,7 @@ import org.opengis.filter.spatial.Within;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Polygon;
 
 public class FilterTypeBindingTest extends FESTestSupport {
 

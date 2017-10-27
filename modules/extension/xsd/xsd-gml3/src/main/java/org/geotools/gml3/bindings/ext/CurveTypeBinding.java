@@ -18,7 +18,7 @@ package org.geotools.gml3.bindings.ext;
 
 import org.geotools.gml3.bindings.LineStringTypeBinding;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 
 
 /**

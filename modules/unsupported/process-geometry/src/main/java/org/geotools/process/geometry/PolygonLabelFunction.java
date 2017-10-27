@@ -29,8 +29,8 @@ import org.opengis.filter.expression.ExpressionVisitor;
 import org.opengis.filter.expression.Function;
 import org.opengis.filter.expression.Literal;
 
-import com.vividsolutions.jts.awt.PointShapeFactory.Point;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.awt.PointShapeFactory.Point;
+import org.locationtech.jts.geom.Geometry;
 
 public class PolygonLabelFunction implements Function {
     static FunctionName NAME = new FunctionNameImpl("labelPoint", Point.class,

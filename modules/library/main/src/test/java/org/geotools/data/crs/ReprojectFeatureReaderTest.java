@@ -16,7 +16,7 @@
  */
 package org.geotools.data.crs;
 
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 import org.geotools.data.DataUtilities;
 import org.geotools.data.FeatureReader;
 import org.geotools.data.collection.ListFeatureCollection;

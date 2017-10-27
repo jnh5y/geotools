@@ -20,7 +20,7 @@ import java.io.IOException;
 
 import org.opengis.feature.simple.SimpleFeature;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * A {@link MultiLevelROIProvider} implementation used for returning {@link MultiLevelROIGeometry}s

@@ -28,7 +28,7 @@ import org.geotools.grid.TestBase;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.vividsolutions.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Coordinate;
 
 /**
  * Unit tests for the OblongGridBuilder class.

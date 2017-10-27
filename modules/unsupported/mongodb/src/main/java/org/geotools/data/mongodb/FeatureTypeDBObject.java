@@ -20,7 +20,7 @@ package org.geotools.data.mongodb;
 import com.mongodb.BasicDBList;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;

@@ -72,7 +72,7 @@ import org.opengis.filter.sort.SortBy;
 import org.opengis.filter.spatial.BBOX;
 
 import com.esri.sde.sdk.client.SeException;
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * {@link ArcSdeFeatureSource} test cases

@@ -127,7 +127,7 @@ import org.opengis.referencing.crs.GeographicCRS;
 import org.opengis.referencing.datum.Ellipsoid;
 import org.opengis.referencing.operation.MathTransform;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 import it.geosolutions.jaiext.JAIExt;
 import org.opengis.referencing.operation.TransformException;

@@ -23,7 +23,7 @@ import java.util.Map.Entry;
 import org.apache.solr.client.solrj.response.LukeResponse;
 import org.apache.solr.common.util.NamedList;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Utilities static methods for SOLR store

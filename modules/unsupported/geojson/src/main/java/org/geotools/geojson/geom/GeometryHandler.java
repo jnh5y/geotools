@@ -22,8 +22,8 @@ import org.geotools.geojson.DelegatingHandler;
 import org.geotools.geojson.RecordingHandler;
 import org.json.simple.parser.ParseException;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
 
 /**
  * 

@@ -25,7 +25,7 @@ import org.opengis.filter.capability.FunctionName;
 import org.opengis.referencing.FactoryException;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 public class FilterFunction_setCRS extends FunctionExpressionImpl {
 

@@ -35,7 +35,7 @@ import org.opengis.filter.spatial.BinarySpatialOperator;
 import org.opengis.filter.spatial.DistanceBufferOperator;
 import org.opengis.filter.temporal.BinaryTemporalOperator;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Utility class for FES bindings.

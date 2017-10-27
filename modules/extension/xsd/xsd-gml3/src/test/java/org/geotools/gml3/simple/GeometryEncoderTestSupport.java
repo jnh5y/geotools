@@ -42,7 +42,7 @@ import org.geotools.xml.Encoder;
 import org.w3c.dom.Document;
 import org.xml.sax.helpers.AttributesImpl;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 public abstract class GeometryEncoderTestSupport extends GML3TestSupport {
 

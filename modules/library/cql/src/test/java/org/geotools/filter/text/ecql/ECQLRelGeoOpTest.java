@@ -32,7 +32,7 @@ import org.opengis.filter.expression.Literal;
 import org.opengis.filter.spatial.Beyond;
 import org.opengis.filter.spatial.DistanceBufferOperator;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Relation geo operation 

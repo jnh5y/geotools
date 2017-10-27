@@ -22,8 +22,8 @@ import org.geotools.gml3.bindings.GML3EncodingUtils;
 import org.geotools.gml3.bindings.GML3MockData;
 import org.w3c.dom.Document;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryCollection;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryCollection;
 
 /**
  * 

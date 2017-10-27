@@ -28,7 +28,7 @@ import javax.xml.namespace.QName;
 import org.geotools.geopkg.TileMatrix;
 import org.opengis.filter.Filter;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * GeoPackage Process Request. 

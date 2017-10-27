@@ -23,8 +23,8 @@ import org.geotools.styling.Style;
 import org.opengis.feature.Feature;
 import org.opengis.feature.type.FeatureType;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * Base interface for renderer. This is very much work in progress.

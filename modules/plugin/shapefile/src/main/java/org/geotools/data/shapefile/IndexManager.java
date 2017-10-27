@@ -37,7 +37,7 @@ import org.geotools.util.logging.Logging;
 import org.opengis.filter.Id;
 import org.opengis.filter.identity.Identifier;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * Manages the index files on behalf of the the {@link ShapefileDataStore}

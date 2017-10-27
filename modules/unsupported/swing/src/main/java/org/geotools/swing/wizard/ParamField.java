@@ -24,7 +24,7 @@ import javax.swing.JComponent;
 import org.geotools.data.Parameter;
 import org.geotools.swing.wizard.JWizard.Controller;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Super class that provides additional helper methods useful when implementing your own

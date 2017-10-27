@@ -5,7 +5,7 @@ import org.geotools.jdbc.JDBCViewTestSetup;
 import org.opengis.feature.type.AttributeDescriptor;
 import org.opengis.feature.type.AttributeType;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 public class SQLServerViewOnlineTest extends JDBCViewOnlineTest {
 

@@ -21,9 +21,9 @@ import static org.junit.Assert.*;
 import org.geotools.process.geometry.GeometryFunctions;
 import org.junit.Test;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.io.WKTReader;
 
 /**
  * @author mdavis

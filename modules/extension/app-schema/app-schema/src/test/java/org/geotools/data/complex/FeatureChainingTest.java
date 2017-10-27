@@ -55,7 +55,7 @@ import org.opengis.filter.expression.Expression;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.NamespaceSupport;
 
-import com.vividsolutions.jts.util.Stopwatch;
+import org.locationtech.jts.util.Stopwatch;
 
 /**
  * This is the tests for feature chaining; nesting complex attributes (feature and non-feature)

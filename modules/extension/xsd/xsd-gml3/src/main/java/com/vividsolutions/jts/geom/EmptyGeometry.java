@@ -1,4 +1,4 @@
-package com.vividsolutions.jts.geom;
+package org.locationtech.jts.geom;
 
 /**
  * 

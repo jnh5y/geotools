@@ -28,7 +28,7 @@ import org.geotools.data.efeature.EFeatureInfo;
 import org.geotools.data.efeature.EFeatureReader;
 import org.geotools.data.efeature.EFeatureStatus;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * This helper class implements a solution to <i>the context startup problem</i>.

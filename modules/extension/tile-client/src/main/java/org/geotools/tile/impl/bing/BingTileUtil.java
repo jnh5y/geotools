@@ -20,7 +20,7 @@ import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.referencing.crs.DefaultGeographicCRS;
 import org.geotools.tile.impl.WebMercatorTileService;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * BingTileUtil contains code ported from <a href="https://msdn.microsoft.com/en-us/library/bb259689.aspx>Bing Maps</a> offering a collection of

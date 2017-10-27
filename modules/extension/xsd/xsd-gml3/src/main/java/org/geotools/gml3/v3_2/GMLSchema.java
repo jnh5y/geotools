@@ -19,7 +19,7 @@ import org.opengis.feature.type.Name;
 import org.opengis.feature.type.PropertyDescriptor;
 import org.opengis.feature.type.Schema;
 
-import com.vividsolutions.jts.geom.LineString;
+import org.locationtech.jts.geom.LineString;
 
 /**
  * 
@@ -1240,7 +1240,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_ABSTRACTGEOMETRYTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","AbstractGeometryType"),
-                com.vividsolutions.jts.geom.Geometry.class, false, true, null, null) {
+                org.locationtech.jts.geom.Geometry.class, false, true, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return ABSTRACTGMLTYPE_TYPE;
@@ -10851,7 +10851,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_GEOMETRYPROPERTYTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","GeometryPropertyType"),
-                com.vividsolutions.jts.geom.Geometry.class, false, false, null, null) {
+                org.locationtech.jts.geom.Geometry.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return XSSchema.ANYTYPE_TYPE;
@@ -11910,7 +11910,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_LINESTRINGTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","LineStringType"),
-                com.vividsolutions.jts.geom.LineString.class, false, false, null, null) {
+                org.locationtech.jts.geom.LineString.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return ABSTRACTCURVETYPE_TYPE;
@@ -12066,7 +12066,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_LINEARRINGPROPERTYTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","LinearRingPropertyType"),
-                com.vividsolutions.jts.geom.LinearRing.class, false, false, null, null) {
+                org.locationtech.jts.geom.LinearRing.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return XSSchema.ANYTYPE_TYPE;
@@ -12108,7 +12108,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_LINEARRINGTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","LinearRingType"),
-                com.vividsolutions.jts.geom.LinearRing.class, false, false, null, null) {
+                org.locationtech.jts.geom.LinearRing.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return ABSTRACTRINGTYPE_TYPE;
@@ -12637,7 +12637,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTICURVEPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AbstractLazyAttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml/3.2","MultiCurvePropertyType"), com.vividsolutions.jts.geom.MultiLineString.class, false,
+            new NameImpl("http://www.opengis.net/gml/3.2","MultiCurvePropertyType"), org.locationtech.jts.geom.MultiLineString.class, false,
             false, null, null
         ) {
             @Override
@@ -12674,7 +12674,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIGEOMETRYPROPERTYTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","MultiGeometryPropertyType"),
-                com.vividsolutions.jts.geom.GeometryCollection.class, false, false, null, null) {
+                org.locationtech.jts.geom.GeometryCollection.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return XSSchema.ANYTYPE_TYPE;
@@ -12709,7 +12709,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIGEOMETRYTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","MultiGeometryType"),
-                com.vividsolutions.jts.geom.GeometryCollection.class, false, false, null, null) {
+                org.locationtech.jts.geom.GeometryCollection.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return ABSTRACTGEOMETRICAGGREGATETYPE_TYPE;
@@ -12744,7 +12744,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIPOINTPROPERTYTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","MultiPointPropertyType"),
-                com.vividsolutions.jts.geom.MultiPoint.class, false, false, null, null) {
+                org.locationtech.jts.geom.MultiPoint.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return XSSchema.ANYTYPE_TYPE;
@@ -12779,7 +12779,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIPOINTTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","MultiPointType"),
-                com.vividsolutions.jts.geom.MultiPoint.class, false, false, null, null) {
+                org.locationtech.jts.geom.MultiPoint.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return ABSTRACTGEOMETRICAGGREGATETYPE_TYPE;
@@ -12959,7 +12959,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTISURFACEPROPERTYTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","MultiSurfacePropertyType"),
-                com.vividsolutions.jts.geom.MultiPolygon.class, false, false, null, null) {
+                org.locationtech.jts.geom.MultiPolygon.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return XSSchema.ANYTYPE_TYPE;
@@ -12994,7 +12994,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTISURFACETYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","MultiSurfaceType"),
-                com.vividsolutions.jts.geom.MultiPolygon.class, false, false, null, null) {
+                org.locationtech.jts.geom.MultiPolygon.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return ABSTRACTGEOMETRICAGGREGATETYPE_TYPE;
@@ -14736,7 +14736,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_POINTPROPERTYTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","PointPropertyType"),
-                com.vividsolutions.jts.geom.Point.class, false, false, null, null) {
+                org.locationtech.jts.geom.Point.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return XSSchema.ANYTYPE_TYPE;
@@ -14773,7 +14773,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_POINTTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","PointType"),
-                com.vividsolutions.jts.geom.Point.class, false, false, null, null) {
+                org.locationtech.jts.geom.Point.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return ABSTRACTGEOMETRICPRIMITIVETYPE_TYPE;
@@ -14987,7 +14987,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_POLYGONTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","PolygonType"),
-                com.vividsolutions.jts.geom.Polygon.class, false, false, null, null) {
+                org.locationtech.jts.geom.Polygon.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return ABSTRACTSURFACETYPE_TYPE;
@@ -17157,7 +17157,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_SURFACEPROPERTYTYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","SurfacePropertyType"),
-                com.vividsolutions.jts.geom.Polygon.class, false, false, null, null) {
+                org.locationtech.jts.geom.Polygon.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return XSSchema.ANYTYPE_TYPE;
@@ -17191,7 +17191,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_SURFACETYPE_TYPE() {
         AttributeType builtType = new AbstractLazyAttributeTypeImpl(
                 new NameImpl("http://www.opengis.net/gml/3.2","SurfaceType"),
-                com.vividsolutions.jts.geom.Polygon.class, false, false, null, null) {
+                org.locationtech.jts.geom.Polygon.class, false, false, null, null) {
             @Override
             public AttributeType buildSuper() {
                 return ABSTRACTSURFACETYPE_TYPE;
@@ -19165,7 +19165,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTICURVETYPE_TYPE() {
         AttributeType builtType;
         builtType = new AbstractLazyAttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml/3.2","MultiCurveType"), com.vividsolutions.jts.geom.MultiLineString.class, false,
+            new NameImpl("http://www.opengis.net/gml/3.2","MultiCurveType"), org.locationtech.jts.geom.MultiLineString.class, false,
             false, null, null) {
             @Override
             public AttributeType buildSuper() {

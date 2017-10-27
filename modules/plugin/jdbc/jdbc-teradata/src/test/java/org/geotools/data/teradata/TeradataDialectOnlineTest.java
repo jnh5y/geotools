@@ -1,7 +1,7 @@
 package org.geotools.data.teradata;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.WKTReader;
 import java.io.StringReader;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

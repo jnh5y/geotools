@@ -42,7 +42,7 @@ import org.geotools.filter.spatial.BBOXImpl;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.Filter;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 
 /** Multithreaded test for concurrent access to GridFeatureCache.

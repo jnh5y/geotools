@@ -22,7 +22,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.opengis.feature.simple.SimpleFeatureType;
 
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Polygon;
 
 /**
  * This one checks proper wrapping and some api methods.

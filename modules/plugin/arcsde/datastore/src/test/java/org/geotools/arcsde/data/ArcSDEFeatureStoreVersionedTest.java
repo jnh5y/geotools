@@ -44,8 +44,8 @@ import org.opengis.feature.simple.SimpleFeatureType;
 
 import com.esri.sde.sdk.client.SeException;
 import com.esri.sde.sdk.client.SeTable;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.io.WKTReader;
 
 /**
  * Functional tests for {@link ArcSdeFeatureStore} when working with versioned tables

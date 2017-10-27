@@ -35,8 +35,8 @@ import org.opengis.referencing.operation.CoordinateOperationFactory;
 import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * A JTS envelope associated with a
@@ -937,7 +937,7 @@ public class ReferencedEnvelope extends Envelope implements org.opengis.geometry
         }
     
         if (env.getDimension() >= 3) {
-            // emptiness test according to com.vividsolutions.jts.geom.Envelope
+            // emptiness test according to org.locationtech.jts.geom.Envelope
             if(env.getMaximum(0) < env.getMinimum(0)) {
                 return new ReferencedEnvelope3D(env.getCoordinateReferenceSystem());
             } else {
@@ -945,7 +945,7 @@ public class ReferencedEnvelope extends Envelope implements org.opengis.geometry
             }
         }
     
-        // emptiness test according to com.vividsolutions.jts.geom.Envelope
+        // emptiness test according to org.locationtech.jts.geom.Envelope
         if(env.getMaximum(0) < env.getMinimum(0))
             return new ReferencedEnvelope(env.getCoordinateReferenceSystem());
         

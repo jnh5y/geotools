@@ -36,7 +36,7 @@ import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.expression.Expression;
 import org.opengis.filter.expression.PropertyName;
 
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.io.WKTReader;
 
 /**
  * This class implement the test that checks the group by visitor behavior with different aggregate visitors.

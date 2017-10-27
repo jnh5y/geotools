@@ -21,9 +21,9 @@ import org.geotools.geometry.jts.WKTReader2;
 import org.geotools.gml3.GML;
 import org.w3c.dom.Document;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.LineString;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.LineString;
 
 public class LineString3DTest extends GeometryEncoderTestSupport {
 

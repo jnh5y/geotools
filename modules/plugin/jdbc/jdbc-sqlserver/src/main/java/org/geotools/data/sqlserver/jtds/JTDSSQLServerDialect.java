@@ -24,7 +24,7 @@ import java.util.Map;
 import org.geotools.data.sqlserver.SQLServerDialect;
 import org.geotools.jdbc.JDBCDataStore;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * @author ian.turton

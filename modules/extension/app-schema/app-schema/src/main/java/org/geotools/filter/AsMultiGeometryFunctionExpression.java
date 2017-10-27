@@ -24,11 +24,11 @@ import org.opengis.feature.Attribute;
 import org.opengis.filter.capability.FunctionName;
 import org.opengis.filter.expression.Expression;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryCollection;
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryCollection;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.Polygon;
 
 /**
  * Function which wraps an instance of geometry in its associatd multi geometry
@@ -43,7 +43,7 @@ import com.vividsolutions.jts.geom.Polygon;
  * <br>
  * <br>
  * This function takes a single argument expression which must evaluate to an
- * instanceof {@link com.vividsolutions.jts.geom.Geometry}.
+ * instanceof {@link org.locationtech.jts.geom.Geometry}.
  * </p>
  * 
  * @author Justin Deoliveira (The Open Planning Project)

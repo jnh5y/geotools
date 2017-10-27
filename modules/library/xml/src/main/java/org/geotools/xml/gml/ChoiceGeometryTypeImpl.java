@@ -23,15 +23,15 @@ import org.opengis.feature.type.Name;
 import org.opengis.filter.Filter;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryCollection;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.geom.MultiLineString;
-import com.vividsolutions.jts.geom.MultiPoint;
-import com.vividsolutions.jts.geom.MultiPolygon;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryCollection;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.geom.MultiLineString;
+import org.locationtech.jts.geom.MultiPoint;
+import org.locationtech.jts.geom.MultiPolygon;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.Polygon;
 
 /**
  * Created for GML generated FeatureTypes. Represents a Choice type.
@@ -70,7 +70,7 @@ public class ChoiceGeometryTypeImpl extends ChoiceAttributeTypeImpl implements
         }
         if (getBinding() == GeometryCollection.class && obj instanceof Geometry) {
             return fac
-                    .createGeometryCollection(new com.vividsolutions.jts.geom.Geometry[] { (com.vividsolutions.jts.geom.Geometry) obj });
+                    .createGeometryCollection(new org.locationtech.jts.geom.Geometry[] { (org.locationtech.jts.geom.Geometry) obj });
         }
         return obj;
     }

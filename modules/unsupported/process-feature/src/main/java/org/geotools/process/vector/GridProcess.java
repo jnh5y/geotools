@@ -37,7 +37,7 @@ import org.geotools.process.factory.DescribeResult;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Polygon;
 
 /**
  * A process that builds a regular grid as a feature collection

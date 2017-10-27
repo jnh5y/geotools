@@ -30,9 +30,9 @@ import org.geotools.xml.ComplexEMFBinding;
 import org.geotools.xml.Configuration;
 import org.picocontainer.MutablePicoContainer;
 
-import com.vividsolutions.jts.geom.CoordinateSequenceFactory;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.impl.CoordinateArraySequenceFactory;
+import org.locationtech.jts.geom.CoordinateSequenceFactory;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.impl.CoordinateArraySequenceFactory;
 
 /**
  * Parser configuration for the http://www.opengis.net/gml schema.

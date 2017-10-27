@@ -95,7 +95,7 @@ import org.junit.Test;
 import org.opengis.referencing.operation.TransformException;
 
 import com.sun.media.imageioimpl.common.PackageUtil;
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 import it.geosolutions.imageio.utilities.ImageIOUtilities;
 import it.geosolutions.imageioimpl.plugins.tiff.TIFFImageReaderSpi;

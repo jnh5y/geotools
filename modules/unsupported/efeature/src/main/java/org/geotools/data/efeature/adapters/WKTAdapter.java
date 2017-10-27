@@ -3,9 +3,9 @@ package org.geotools.data.efeature.adapters;
 import org.eclipse.emf.query.conditions.Condition;
 import org.eclipse.emf.query.conditions.IDataTypeAdapter;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.WKTReader;
-import com.vividsolutions.jts.io.WKTWriter;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.WKTReader;
+import org.locationtech.jts.io.WKTWriter;
 
 /**
  * An Adapter class to be used to extract from -adapt- the argument object to some {@link String}

@@ -16,7 +16,7 @@
  */
 package org.geotools.renderer.crs;
 
-import com.vividsolutions.jts.geom.*;
+import org.locationtech.jts.geom.*;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -27,7 +27,7 @@ import org.geotools.data.efeature.tests.EFeatureData;
 import org.geotools.data.efeature.tests.EFeatureTestsFactory;
 import org.geotools.data.efeature.tests.EFeatureTestsPackage;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * @author kengu - 14. juni 2011

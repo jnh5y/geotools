@@ -50,7 +50,7 @@ import org.opengis.referencing.operation.MathTransform2D;
 import org.opengis.referencing.operation.NoninvertibleTransformException;
 import org.opengis.referencing.operation.TransformException;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Helper class which takes coverage's spatial information input (CRS, bbox, resolution,...) and a set of request's parameters (requestedCRS,
@@ -411,7 +411,7 @@ public class SpatialRequestHelper {
             throws TransformException, FactoryException {
         final ReferencedEnvelope cropBBOXInRequestCRS =  Utils.reprojectEnvelope(computedBBox, requestCRS, requestedBBox);
         // make sure it falls within the requested envelope
-        cropBBOXInRequestCRS.intersection((com.vividsolutions.jts.geom.Envelope) requestedBBox);
+        cropBBOXInRequestCRS.intersection((org.locationtech.jts.geom.Envelope) requestedBBox);
 
         // now go back to raster space
         Rectangle computedRasterArea = new GeneralGridEnvelope(

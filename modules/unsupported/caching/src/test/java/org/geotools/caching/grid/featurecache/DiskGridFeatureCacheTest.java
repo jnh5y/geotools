@@ -29,7 +29,7 @@ import org.geotools.caching.grid.spatialindex.store.DiskStorage;
 import org.geotools.caching.spatialindex.Region;
 import org.geotools.caching.spatialindex.Storage;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 
 /**

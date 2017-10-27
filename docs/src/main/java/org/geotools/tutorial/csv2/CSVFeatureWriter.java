@@ -27,7 +27,7 @@ import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.referencing.cs.AxisDirection;
 
 import com.csvreader.CsvWriter;
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 
 /**
  * Iterator supporting writing of feature content.

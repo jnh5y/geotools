@@ -32,7 +32,7 @@ import java.util.logging.Logger;
 import org.geotools.factory.Hints;
 import org.geotools.util.logging.Logging;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Describes a virtual table, that is, a feature type created starting from a generic SQL query.

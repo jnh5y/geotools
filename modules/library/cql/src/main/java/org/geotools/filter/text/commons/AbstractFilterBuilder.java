@@ -59,12 +59,12 @@ import org.opengis.filter.temporal.During;
 import org.opengis.filter.temporal.TEquals;
 import org.opengis.temporal.Period;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.LinearRing;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.LinearRing;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.io.WKTReader;
 
 /**
  * 
@@ -1142,7 +1142,7 @@ public abstract class AbstractFilterBuilder {
             Literal literal = filterFactory.literal(g);
 
             return literal;
-        } catch (com.vividsolutions.jts.io.ParseException e) {
+        } catch (org.locationtech.jts.io.ParseException e) {
             throw new CQLException(e.getMessage(), geometry, e, this.cqlSource);
         } catch (Exception e) {
             throw new CQLException("Error building WKT Geometry: " + e.getMessage(),geometry, e, this.cqlSource);

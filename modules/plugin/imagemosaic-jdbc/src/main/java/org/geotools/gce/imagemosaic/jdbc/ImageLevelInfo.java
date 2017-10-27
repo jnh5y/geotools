@@ -21,7 +21,7 @@ import java.io.PrintWriter;
 
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * Java Bean for pyramid level information. For each pyramid and the original

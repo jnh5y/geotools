@@ -32,9 +32,9 @@ import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.FilterFactory;
 import org.opengis.filter.expression.PropertyName;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Point;
 
 
 /**
@@ -81,7 +81,7 @@ public class TextSymbolTest extends TestCase {
         GeometryFactory geomFac = new GeometryFactory();
         SimpleFeatureTypeBuilder ftb = new SimpleFeatureTypeBuilder();
         ftb.setCRS(null);
-		ftb.add("centre", com.vividsolutions.jts.geom.Point.class);
+		ftb.add("centre", org.locationtech.jts.geom.Point.class);
 		ftb.add("size", Double.class);
 		ftb.add("rotation", Double.class);
 		ftb.add("symbol", String.class);

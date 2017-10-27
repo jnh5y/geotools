@@ -17,7 +17,7 @@
 
 package org.geotools.data.complex;
 
-import com.vividsolutions.jts.util.Stopwatch;
+import org.locationtech.jts.util.Stopwatch;
 
 import org.geotools.data.DataAccess;
 import org.geotools.data.DataAccessFinder;

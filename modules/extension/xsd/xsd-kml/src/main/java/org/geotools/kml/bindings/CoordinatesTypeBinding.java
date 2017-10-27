@@ -20,9 +20,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
 import javax.xml.namespace.QName;
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.CoordinateSequenceFactory;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.CoordinateSequenceFactory;
 
 import org.geotools.kml.KML;
 import org.geotools.xml.AbstractSimpleBinding;

@@ -20,7 +20,7 @@ package org.geotools.geopkg.wps.xml;
 import org.geotools.geopkg.wps.xml.GPKG;
 import org.geotools.xml.Binding;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * Binding test case for http://www.opengis.net/gpkg:bboxtype.

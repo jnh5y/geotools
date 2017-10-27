@@ -32,7 +32,7 @@ import org.opengis.feature.type.Name;
 
 import com.csvreader.CsvReader;
 import com.csvreader.CsvWriter;
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 
 /**
  * DataStore for Comma Separated Value (CSV) files.

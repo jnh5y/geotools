@@ -41,7 +41,7 @@ import org.geotools.test.OnlineTestCase;
 import org.opengis.temporal.Instant;
 import org.opengis.temporal.Period;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 public abstract class SolrTestSupport extends OnlineTestCase {
 

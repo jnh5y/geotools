@@ -25,7 +25,7 @@ import org.opengis.feature.simple.SimpleFeature;
 import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 
 public abstract class MongoTestSupport extends OnlineTestCase {
 

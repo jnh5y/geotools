@@ -39,8 +39,8 @@ import org.opengis.feature.GeometryAttribute;
 import org.opengis.feature.Property;
 import org.opengis.feature.type.AttributeDescriptor;
 import org.opengis.filter.identity.FeatureId;
-import com.vividsolutions.jts.geom.EmptyGeometry;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.EmptyGeometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Tests for {@link ComplexAttributeConverterFactory}.

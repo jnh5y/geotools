@@ -44,7 +44,7 @@ public class GMLFilterGeometry extends org.xml.sax.helpers.XMLFilterImpl
     private GMLHandlerJTS parent;
 
     /** Factory for the JTS geometries. */
-    private com.vividsolutions.jts.geom.GeometryFactory geometryFactory = new com.vividsolutions.jts.geom.GeometryFactory();
+    private org.locationtech.jts.geom.GeometryFactory geometryFactory = new org.locationtech.jts.geom.GeometryFactory();
 
     /** Factory for the GML geometry type subhandlers. */
     private SubHandlerFactory handlerFactory = new SubHandlerFactory();
@@ -135,7 +135,7 @@ public class GMLFilterGeometry extends org.xml.sax.helpers.XMLFilterImpl
      * @throws SAXException parser error.
      */
     public void gmlCoordinates(double x, double y) throws SAXException {
-        currentHandler.addCoordinate(new com.vividsolutions.jts.geom.Coordinate(
+        currentHandler.addCoordinate(new org.locationtech.jts.geom.Coordinate(
                 x, y));
     }
 
@@ -151,7 +151,7 @@ public class GMLFilterGeometry extends org.xml.sax.helpers.XMLFilterImpl
      */
     public void gmlCoordinates(double x, double y, double z)
         throws SAXException {
-        currentHandler.addCoordinate(new com.vividsolutions.jts.geom.Coordinate(
+        currentHandler.addCoordinate(new org.locationtech.jts.geom.Coordinate(
                 x, y, z));
     }
 

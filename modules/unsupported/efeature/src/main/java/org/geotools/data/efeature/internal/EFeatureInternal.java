@@ -39,7 +39,7 @@ import org.geotools.data.efeature.util.EFeatureGeometryList;
 import org.opengis.feature.Feature;
 import org.opengis.feature.Property;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * This is an internal implementation of the {@link EFeature} contract. 

@@ -11,8 +11,8 @@ import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.expression.Function;
 import org.opengis.filter.expression.Literal;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.WKTReader;
 
 /**
  * Unit tests for FilterFunction_intersects3D

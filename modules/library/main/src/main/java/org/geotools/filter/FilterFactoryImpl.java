@@ -160,7 +160,7 @@ import org.opengis.util.InternationalString;
 import org.xml.sax.helpers.NamespaceSupport;
 import org.geotools.filter.spatial.BBOX3DImpl;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 
 /**

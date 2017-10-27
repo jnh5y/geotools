@@ -19,7 +19,7 @@ import org.opengis.geometry.primitive.SurfacePatch;
 
 import org.geotools.geometry.jts.spatialschema.geometry.geometry.GenericSurfaceImpl;
 import org.geotools.geometry.jts.JTSGeometry;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Defines a homogeneous portion of a {@linkplain Surface surface}.
@@ -39,7 +39,7 @@ public abstract class SurfacePatchImpl extends GenericSurfaceImpl implements Sur
     private Surface surface;
     private SurfaceInterpolation interpolation;
     private SurfaceBoundary boundary;
-    private com.vividsolutions.jts.geom.Geometry jtsPeer;
+    private org.locationtech.jts.geom.Geometry jtsPeer;
 
     public SurfacePatchImpl(SurfaceInterpolation interpolation, SurfaceBoundary boundary) {
         this.interpolation = interpolation;
@@ -119,12 +119,12 @@ public abstract class SurfacePatchImpl extends GenericSurfaceImpl implements Sur
      * @see com.polexis.lite.spatialschema.geometry.geometry.GenericSurfaceImpl#getPerimeter()
      */
     public final double getPerimeter() {
-        com.vividsolutions.jts.geom.Geometry jtsGeom = getJTSGeometry();
+        org.locationtech.jts.geom.Geometry jtsGeom = getJTSGeometry();
         return jtsGeom.getBoundary().getLength();
     }
 
     public final double getArea() {
-        com.vividsolutions.jts.geom.Geometry jtsGeom = getJTSGeometry();
+        org.locationtech.jts.geom.Geometry jtsGeom = getJTSGeometry();
         return jtsGeom.getArea();
     }
 
@@ -148,5 +148,5 @@ public abstract class SurfacePatchImpl extends GenericSurfaceImpl implements Sur
         jtsPeer = null;
     }
 
-    public abstract com.vividsolutions.jts.geom.Geometry calculateJTSPeer();
+    public abstract org.locationtech.jts.geom.Geometry calculateJTSPeer();
 }

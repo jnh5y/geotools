@@ -37,8 +37,8 @@ import org.opengis.filter.FilterFactory2;
 import org.opengis.filter.spatial.Disjoint;
 import org.opengis.geometry.BoundingBox;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
 
 
 /**
@@ -101,7 +101,7 @@ public class CrossesIntegrity extends RelationIntegrity
 	
 	
 	/* (non-Javadoc)
-	 * @see org.geotools.validation.IntegrityValidation#validate(java.util.Map, com.vividsolutions.jts.geom.Envelope, org.geotools.validation.ValidationResults)
+	 * @see org.geotools.validation.IntegrityValidation#validate(java.util.Map, org.locationtech.jts.geom.Envelope, org.geotools.validation.ValidationResults)
 	 */
 	public boolean validate(Map layers, ReferencedEnvelope envelope,
 			ValidationResults results) throws Exception 

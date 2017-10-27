@@ -33,7 +33,7 @@ import org.junit.*;
 import org.opengis.filter.Filter;
 import org.xml.sax.EntityResolver;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 import static org.junit.Assert.*;
 
@@ -143,7 +143,7 @@ public final class GeoToolsTest {
     public void testVersion(){
         String location;
         
-        location = "jar:file:/Users/jody/.m2/repository/com/vividsolutions/jts/1.14/jts-1.14.jar!/com/vividsolutions/jts/geom/Geometry.class";
+        location = "jar:file:/Users/jody/.m2/repository/org.locationtech/jts/1.14/jts-1.14.jar!/org.locationtech/jts/geom/Geometry.class";
         assertEquals( "1.14", GeoTools.jarVersion( location ));
         
         location = "jar:file:/Users/jody/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/org/apache/commons/logging/LogFactory.class";
@@ -168,7 +168,7 @@ public final class GeoToolsTest {
 
         version = GeoTools.getVersion( Geometry.class );
         assertNotNull( version );
-        assertEquals("1.14.0", version.toString() );
+        assertEquals("SNAPSHOT", version.toString() );
     }
     /**
      * Tests the use of system properties.

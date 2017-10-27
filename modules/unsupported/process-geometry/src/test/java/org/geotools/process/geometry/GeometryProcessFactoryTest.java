@@ -18,9 +18,9 @@ import org.geotools.process.geometry.GeometryProcessFactory;
 import org.opengis.feature.type.Name;
 import org.opengis.util.InternationalString;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.WKTReader;
-import com.vividsolutions.jts.operation.buffer.BufferParameters;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.WKTReader;
+import org.locationtech.jts.operation.buffer.BufferParameters;
 
 /**
  * 

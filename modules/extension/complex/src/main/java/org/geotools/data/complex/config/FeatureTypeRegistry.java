@@ -61,7 +61,7 @@ import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.util.InternationalString;
 import org.xml.sax.helpers.NamespaceSupport;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * A registry of GeoTools {@link AttributeType} and {@link AttributeDescriptor} lazily parsed from the EMF {@link XSDTypeDefinition} and

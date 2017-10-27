@@ -16,7 +16,7 @@
  */
 package org.geotools.data.geobuf;
 
-import com.vividsolutions.jts.geom.*;
+import org.locationtech.jts.geom.*;
 import org.geotools.geometry.jts.JTSFactoryFinder;
 
 import java.io.IOException;

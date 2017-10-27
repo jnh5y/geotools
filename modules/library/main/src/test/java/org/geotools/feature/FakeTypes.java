@@ -72,7 +72,7 @@ public class FakeTypes {
     private static AttributeType build_GEOMETRYPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(new NameImpl("http://www.opengis.net/gml",
-                "GeometryPropertyType"), com.vividsolutions.jts.geom.Geometry.class, false, false,
+                "GeometryPropertyType"), org.locationtech.jts.geom.Geometry.class, false, false,
                 Collections.<Filter> emptyList(), FakeTypes.ANYTYPE_TYPE, null);
 
         return builtType;

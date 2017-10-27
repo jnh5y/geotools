@@ -64,7 +64,7 @@ import org.opengis.filter.identity.Identifier;
 import org.opengis.filter.spatial.BBOX;
 
 import com.esri.sde.sdk.client.SeVersion;
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * Test suite for the {@link ArcSDEQuery} query wrapper

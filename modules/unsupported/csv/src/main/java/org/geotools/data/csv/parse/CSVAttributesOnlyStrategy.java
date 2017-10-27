@@ -32,7 +32,7 @@ import org.opengis.feature.type.AttributeDescriptor;
 import org.opengis.feature.type.GeometryDescriptor;
 
 import com.csvreader.CsvWriter;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 public class CSVAttributesOnlyStrategy extends CSVStrategy {
 

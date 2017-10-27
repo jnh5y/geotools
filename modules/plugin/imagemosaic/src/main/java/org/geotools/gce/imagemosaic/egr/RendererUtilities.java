@@ -29,7 +29,7 @@ import org.geotools.referencing.operation.builder.GridToEnvelopeMapper;
 import org.opengis.geometry.MismatchedDimensionException;
 import org.opengis.referencing.datum.PixelInCell;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * This is a reduced copy of RenderUtilities found in the render module, to avoid adding a dependency on it while using only a few methods

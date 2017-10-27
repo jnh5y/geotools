@@ -31,7 +31,7 @@ import org.opengis.feature.type.FeatureType;
 import org.picocontainer.MutablePicoContainer;
 import org.xml.sax.SAXException;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 
 /**
  * {@link GetFeatureParser} for {@link WFSFeatureReader} that uses the geotools

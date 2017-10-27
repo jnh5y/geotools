@@ -20,7 +20,7 @@ import java.awt.geom.AffineTransform;
 
 
 
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 
 
 /**

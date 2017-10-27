@@ -805,7 +805,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_ABSTRACTGEOMETRYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","AbstractGeometryType"), com.vividsolutions.jts.geom.Geometry.class, false,
+            new NameImpl("http://www.opengis.net/gml","AbstractGeometryType"), org.locationtech.jts.geom.Geometry.class, false,
             true, Collections.<Filter>emptyList(), ABSTRACTGMLTYPE_TYPE, null
         );
         return builtType;
@@ -996,7 +996,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_POINTTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","PointType"), com.vividsolutions.jts.geom.Point.class, false,
+            new NameImpl("http://www.opengis.net/gml","PointType"), org.locationtech.jts.geom.Point.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTGEOMETRICPRIMITIVETYPE_TYPE, null
         );
         return builtType;
@@ -1038,7 +1038,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_POINTPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","PointPropertyType"), com.vividsolutions.jts.geom.Point.class, false,
+            new NameImpl("http://www.opengis.net/gml","PointPropertyType"), org.locationtech.jts.geom.Point.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -1704,7 +1704,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_POLYGONTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","PolygonType"), com.vividsolutions.jts.geom.Polygon.class, false,
+            new NameImpl("http://www.opengis.net/gml","PolygonType"), org.locationtech.jts.geom.Polygon.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTSURFACETYPE_TYPE, null
         );
         return builtType;
@@ -4065,7 +4065,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_LINEARRINGTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","LinearRingType"), com.vividsolutions.jts.geom.LinearRing.class, false,
+            new NameImpl("http://www.opengis.net/gml","LinearRingType"), org.locationtech.jts.geom.LinearRing.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTRINGTYPE_TYPE, null
         );
         return builtType;
@@ -4095,7 +4095,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_LINEARRINGPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","LinearRingPropertyType"), com.vividsolutions.jts.geom.LinearRing.class, false,
+            new NameImpl("http://www.opengis.net/gml","LinearRingPropertyType"), org.locationtech.jts.geom.LinearRing.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -6289,7 +6289,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIPOINTTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiPointType"), com.vividsolutions.jts.geom.MultiPoint.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiPointType"), org.locationtech.jts.geom.MultiPoint.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTGEOMETRICAGGREGATETYPE_TYPE, null
         );
         return builtType;
@@ -6325,7 +6325,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIPOINTPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiPointPropertyType"), com.vividsolutions.jts.geom.MultiPoint.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiPointPropertyType"), org.locationtech.jts.geom.MultiPoint.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -8838,7 +8838,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_SURFACEPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","SurfacePropertyType"), com.vividsolutions.jts.geom.Polygon.class, false,
+            new NameImpl("http://www.opengis.net/gml","SurfacePropertyType"), org.locationtech.jts.geom.Polygon.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -8913,7 +8913,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTISURFACETYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiSurfaceType"), com.vividsolutions.jts.geom.MultiPolygon.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiSurfaceType"), org.locationtech.jts.geom.MultiPolygon.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTGEOMETRICAGGREGATETYPE_TYPE, null
         );
         return builtType;
@@ -9476,7 +9476,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_LINESTRINGTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","LineStringType"), com.vividsolutions.jts.geom.LineString.class, false,
+            new NameImpl("http://www.opengis.net/gml","LineStringType"), org.locationtech.jts.geom.LineString.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTCURVETYPE_TYPE, null
         );
         return builtType;
@@ -9519,7 +9519,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_LINESTRINGPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","LineStringPropertyType"), com.vividsolutions.jts.geom.LineString.class, false,
+            new NameImpl("http://www.opengis.net/gml","LineStringPropertyType"), org.locationtech.jts.geom.LineString.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -9553,7 +9553,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTILINESTRINGTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiLineStringType"), com.vividsolutions.jts.geom.MultiLineString.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiLineStringType"), org.locationtech.jts.geom.MultiLineString.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTGEOMETRICAGGREGATETYPE_TYPE, null
         );
         return builtType;
@@ -9590,7 +9590,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTILINESTRINGPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiLineStringPropertyType"), com.vividsolutions.jts.geom.MultiLineString.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiLineStringPropertyType"), org.locationtech.jts.geom.MultiLineString.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -10229,7 +10229,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTISURFACEPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiSurfacePropertyType"), com.vividsolutions.jts.geom.MultiPolygon.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiSurfacePropertyType"), org.locationtech.jts.geom.MultiPolygon.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -11590,7 +11590,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_SURFACETYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","SurfaceType"), com.vividsolutions.jts.geom.Polygon.class, false,
+            new NameImpl("http://www.opengis.net/gml","SurfaceType"), org.locationtech.jts.geom.Polygon.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTSURFACETYPE_TYPE, null
         );
         return builtType;
@@ -15499,7 +15499,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIGEOMETRYPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiGeometryPropertyType"), com.vividsolutions.jts.geom.GeometryCollection.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiGeometryPropertyType"), org.locationtech.jts.geom.GeometryCollection.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -22398,7 +22398,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_POLYGONPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","PolygonPropertyType"), com.vividsolutions.jts.geom.Polygon.class, false,
+            new NameImpl("http://www.opengis.net/gml","PolygonPropertyType"), org.locationtech.jts.geom.Polygon.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -22432,7 +22432,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIPOLYGONTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiPolygonType"), com.vividsolutions.jts.geom.MultiPolygon.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiPolygonType"), org.locationtech.jts.geom.MultiPolygon.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTGEOMETRICAGGREGATETYPE_TYPE, null
         );
         return builtType;
@@ -22470,7 +22470,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIPOLYGONPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiPolygonPropertyType"), com.vividsolutions.jts.geom.MultiPolygon.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiPolygonPropertyType"), org.locationtech.jts.geom.MultiPolygon.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -23406,7 +23406,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_GEOMETRYPROPERTYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","GeometryPropertyType"), com.vividsolutions.jts.geom.Geometry.class, false,
+            new NameImpl("http://www.opengis.net/gml","GeometryPropertyType"), org.locationtech.jts.geom.Geometry.class, false,
             false, Collections.<Filter>emptyList(), XSSchema.ANYTYPE_TYPE, null
         );
         return builtType;
@@ -23482,7 +23482,7 @@ public class GMLSchema extends SchemaImpl {
     private static AttributeType build_MULTIGEOMETRYTYPE_TYPE() {
         AttributeType builtType;
         builtType = new AttributeTypeImpl(
-            new NameImpl("http://www.opengis.net/gml","MultiGeometryType"), com.vividsolutions.jts.geom.GeometryCollection.class, false,
+            new NameImpl("http://www.opengis.net/gml","MultiGeometryType"), org.locationtech.jts.geom.GeometryCollection.class, false,
             false, Collections.<Filter>emptyList(), ABSTRACTGEOMETRICAGGREGATETYPE_TYPE, null
         );
         return builtType;

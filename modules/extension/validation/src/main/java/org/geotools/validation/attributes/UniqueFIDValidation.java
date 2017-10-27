@@ -122,7 +122,7 @@ public class UniqueFIDValidation extends DefaultIntegrityValidation {
      * @throws Exception DOCUMENT ME!
      *
      * @see org.geotools.validation.IntegrityValidation#validate(java.util.Map,
-     *      com.vividsolutions.jts.geom.Envelope,
+     *      org.locationtech.jts.geom.Envelope,
      *      org.geotools.validation.ValidationResults)
      */
     public boolean validate(Map layers, ReferencedEnvelope envelope,

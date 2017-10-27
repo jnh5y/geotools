@@ -19,7 +19,7 @@ package org.geotools.geopkg;
 import org.geotools.geometry.jts.GeometryBuilder;
 import org.geotools.jdbc.JDBCViewTestSetup;
 
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Polygon;
 
 public class GeoPkgViewTestSetup extends JDBCViewTestSetup {
 

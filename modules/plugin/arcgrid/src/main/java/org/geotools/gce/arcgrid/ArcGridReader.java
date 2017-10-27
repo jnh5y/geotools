@@ -81,7 +81,7 @@ import org.opengis.referencing.operation.TransformException;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import com.vividsolutions.jts.io.InStream;
+import org.locationtech.jts.io.InStream;
 
 import it.geosolutions.imageio.plugins.arcgrid.AsciiGridsImageMetadata;
 import it.geosolutions.imageio.plugins.arcgrid.spi.AsciiGridsImageReaderSpi;

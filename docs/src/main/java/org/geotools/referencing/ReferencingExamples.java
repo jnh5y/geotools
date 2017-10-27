@@ -42,7 +42,7 @@ import org.opengis.referencing.operation.Conversion;
 import org.opengis.referencing.operation.MathTransformFactory;
 import org.opengis.util.GenericName;
 
-import com.vividsolutions.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Coordinate;
 
 /**
  * The following examples are taken from CTSTutorial provided by Rueben Schulz. The examples were

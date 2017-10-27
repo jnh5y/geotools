@@ -18,7 +18,7 @@ package org.geotools.graph.structure.line;
 
 import org.geotools.graph.structure.basic.BasicNode;
 
-import com.vividsolutions.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Coordinate;
 
 /**
  * Basic implementation of XYNode extended from BasicNode. The coordinate is

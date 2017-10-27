@@ -23,7 +23,7 @@ import org.geotools.data.wfs.internal.GetFeatureParser;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.type.FeatureType;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 
 public class CachingGetFeatureParser implements GetFeatureParser {
 

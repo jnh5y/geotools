@@ -27,8 +27,8 @@ import org.geotools.data.efeature.DataBuilder;
 import org.geotools.data.efeature.DataTypes;
 import org.geotools.util.logging.Logging;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.ParseException;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.ParseException;
 
 /**
  * @author kengu

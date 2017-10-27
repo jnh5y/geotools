@@ -23,9 +23,9 @@ import org.opengis.referencing.operation.TransformException;
 import org.opengis.geometry.DirectPosition;
 import org.opengis.geometry.MismatchedDimensionException;
 
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.impl.CoordinateArraySequence;
-import com.vividsolutions.jts.geom.impl.PackedCoordinateSequence;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.impl.CoordinateArraySequence;
+import org.locationtech.jts.geom.impl.PackedCoordinateSequence;
 
 /**
  * A JTS CoordinateSequenceTransformer which transforms the values in place.
@@ -52,7 +52,7 @@ import com.vividsolutions.jts.geom.impl.PackedCoordinateSequence;
 public class InPlaceCoordinateSequenceTransformer implements CoordinateSequenceTransformer {
 
     /**
-     * @see org.geotools.geometry.jts.CoordinateSequenceTransformer#transform(com.vividsolutions.jts.geom.CoordinateSequence, org.opengis.referencing.operation.MathTransform)
+     * @see org.geotools.geometry.jts.CoordinateSequenceTransformer#transform(org.locationtech.jts.geom.CoordinateSequence, org.opengis.referencing.operation.MathTransform)
      */
     public CoordinateSequence transform( CoordinateSequence cs, MathTransform transform )
             throws TransformException {

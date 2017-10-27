@@ -20,9 +20,9 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Set;
 
-import com.vividsolutions.jts.geom.CoordinateSequenceFactory;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.PrecisionModel;
+import org.locationtech.jts.geom.CoordinateSequenceFactory;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.PrecisionModel;
 
 import org.geotools.factory.Hints;
 import org.geotools.factory.FactoryFinder;

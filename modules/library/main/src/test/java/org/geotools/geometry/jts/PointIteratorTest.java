@@ -7,8 +7,8 @@ import java.awt.geom.PathIterator;
 
 import org.junit.Test;
 
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.io.WKTReader;
 
 public class PointIteratorTest {
 

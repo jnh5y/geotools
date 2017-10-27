@@ -32,8 +32,8 @@ import org.geotools.graph.structure.line.OptXYNode;
 import org.geotools.graph.structure.opt.OptEdge;
 import org.geotools.graph.structure.opt.OptNode;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.LineSegment;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.LineSegment;
 
 /**
  * An implementation of GraphGenerator used to generate an optimized graph 

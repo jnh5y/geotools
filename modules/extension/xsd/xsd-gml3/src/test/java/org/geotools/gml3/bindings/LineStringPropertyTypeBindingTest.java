@@ -21,7 +21,7 @@ import org.geotools.gml3.GML3TestSupport;
 import org.geotools.xml.Binding;
 import org.w3c.dom.Document;
 
-import com.vividsolutions.jts.geom.LineString;
+import org.locationtech.jts.geom.LineString;
 
 /**
  * 

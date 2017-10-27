@@ -20,7 +20,7 @@ import org.geotools.geometry.jts.CircularString;
 import org.geotools.gml3.bindings.GML3MockData;
 import org.geotools.gml3.v3_2.GML32TestSupport;
 
-import com.vividsolutions.jts.geom.LineString;
+import org.locationtech.jts.geom.LineString;
 
 /**
  *

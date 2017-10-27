@@ -40,8 +40,8 @@ import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.MultiPolygon;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.MultiPolygon;
 
 /**
  *

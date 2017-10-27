@@ -41,7 +41,7 @@ import org.geotools.swt.utils.Utils;
 import org.opengis.feature.Feature;
 import org.opengis.feature.Property;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * A cursor tool to retrieve information about features that the user clicks

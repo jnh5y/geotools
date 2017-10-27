@@ -59,17 +59,17 @@ import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.expression.Expression;
 import org.opengis.referencing.operation.MathTransform;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.geom.LinearRing;
-import com.vividsolutions.jts.geom.MultiLineString;
-import com.vividsolutions.jts.geom.MultiPoint;
-import com.vividsolutions.jts.geom.MultiPolygon;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.geom.LinearRing;
+import org.locationtech.jts.geom.MultiLineString;
+import org.locationtech.jts.geom.MultiPoint;
+import org.locationtech.jts.geom.MultiPolygon;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.Polygon;
  
 /**
  * This class is used to isolate GeoTools from the specific graphic library
@@ -384,14 +384,14 @@ public class Drawer {
      * @return The geometry requested in the symbolizer, or the default geometry if none is
      *         specified
      */
-    private com.vividsolutions.jts.geom.Geometry findGeometry( SimpleFeature f, Symbolizer s) {
+    private org.locationtech.jts.geom.Geometry findGeometry( SimpleFeature f, Symbolizer s) {
         String geomName = getGeometryPropertyName(s);
         // get the geometry
-        com.vividsolutions.jts.geom.Geometry geom;
+        org.locationtech.jts.geom.Geometry geom;
         if (geomName == null) {
-            geom = (com.vividsolutions.jts.geom.Geometry) f.getDefaultGeometry();
+            geom = (org.locationtech.jts.geom.Geometry) f.getDefaultGeometry();
         } else {
-            geom = (com.vividsolutions.jts.geom.Geometry) f.getAttribute(geomName);
+            geom = (org.locationtech.jts.geom.Geometry) f.getAttribute(geomName);
         }
         // if the symbolizer is a point or text symbolizer generate a suitable
         // location to place the

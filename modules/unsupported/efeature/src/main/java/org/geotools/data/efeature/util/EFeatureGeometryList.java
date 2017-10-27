@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import org.geotools.data.efeature.EFeatureGeometry;
 import org.geotools.data.efeature.EFeatureProperty;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Unmodifiable list of {@link EFeatureGeometry} instances.

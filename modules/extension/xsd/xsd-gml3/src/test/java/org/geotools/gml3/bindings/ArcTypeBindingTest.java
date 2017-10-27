@@ -19,7 +19,7 @@ package org.geotools.gml3.bindings;
 import org.geotools.geometry.jts.CircularString;
 import org.geotools.gml3.GML3TestSupport;
 
-import com.vividsolutions.jts.geom.LineString;
+import org.locationtech.jts.geom.LineString;
 
 /**
  *

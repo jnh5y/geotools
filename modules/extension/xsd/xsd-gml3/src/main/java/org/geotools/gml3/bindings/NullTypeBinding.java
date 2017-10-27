@@ -22,7 +22,7 @@ import org.geotools.gml3.GML;
 import org.geotools.xml.AbstractSimpleBinding;
 import org.geotools.xml.InstanceComponent;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * Binding object for the type http://www.opengis.net/gml:NullType.

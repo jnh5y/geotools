@@ -21,7 +21,7 @@ import java.util.Map;
 import org.geotools.validation.DefaultIntegrityValidation;
 import org.geotools.validation.ValidationResults;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 
 /**
@@ -66,7 +66,7 @@ public class PolygonCoveredByFeaturePolygonValidation
      * @throws Exception DOCUMENT ME!
      *
      * @see org.geotools.validation.IntegrityValidation#validate(java.util.Map,
-     *      com.vividsolutions.jts.geom.Envelope,
+     *      org.locationtech.jts.geom.Envelope,
      *      org.geotools.validation.ValidationResults)
      */
     public boolean validate(Map layers, Envelope envelope,

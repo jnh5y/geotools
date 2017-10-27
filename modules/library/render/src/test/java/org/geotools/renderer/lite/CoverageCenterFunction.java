@@ -13,9 +13,9 @@ import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.capability.FunctionName;
 import org.opengis.geometry.Envelope;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Point;
 
 /**
  * A test rendering transformation that returns the center of the provided coverage

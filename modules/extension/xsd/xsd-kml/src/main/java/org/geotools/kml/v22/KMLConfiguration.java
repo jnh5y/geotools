@@ -39,8 +39,8 @@ import org.geotools.styling.StyleFactory;
 import org.geotools.xml.Configuration;
 import org.picocontainer.MutablePicoContainer;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.impl.CoordinateArraySequenceFactory;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.impl.CoordinateArraySequenceFactory;
 
 /**
  * Parser configuration for the http://www.opengis.net/kml/2.2 schema.

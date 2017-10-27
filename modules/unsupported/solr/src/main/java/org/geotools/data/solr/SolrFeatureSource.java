@@ -46,7 +46,7 @@ import org.opengis.feature.type.AttributeDescriptor;
 import org.opengis.filter.Filter;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.geotools.factory.CommonFactoryFinder;

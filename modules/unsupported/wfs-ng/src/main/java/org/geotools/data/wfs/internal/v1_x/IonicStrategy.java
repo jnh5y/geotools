@@ -30,9 +30,9 @@ import org.geotools.gml2.bindings.GMLCoordinatesTypeBinding;
 import org.geotools.xml.Configuration;
 import org.picocontainer.MutablePicoContainer;
 
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.impl.PackedCoordinateSequence;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.impl.PackedCoordinateSequence;
 
 /**
  */

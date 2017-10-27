@@ -18,8 +18,8 @@ package org.geotools.filter.function;
 
 import org.opengis.filter.expression.Function;
 
-import com.vividsolutions.jts.io.ParseException;
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.io.ParseException;
+import org.locationtech.jts.io.WKTReader;
 
 public class GeometryFunctionTest extends FunctionTestSupport {
 

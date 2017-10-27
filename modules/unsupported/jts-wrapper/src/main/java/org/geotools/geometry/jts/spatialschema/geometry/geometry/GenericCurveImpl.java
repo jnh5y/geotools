@@ -32,7 +32,7 @@ public abstract class GenericCurveImpl implements GenericCurve, JTSGeometry {
     //  fields
     //*************************************************************************
 
-    private com.vividsolutions.jts.geom.Geometry jtsPeer;
+    private org.locationtech.jts.geom.Geometry jtsPeer;
 
     protected JTSGeometry parent;
 
@@ -44,7 +44,7 @@ public abstract class GenericCurveImpl implements GenericCurve, JTSGeometry {
      * Subclasses must override this method to compute the JTS equivalent of
      * this geometry.
      */
-    protected abstract com.vividsolutions.jts.geom.Geometry computeJTSPeer();
+    protected abstract org.locationtech.jts.geom.Geometry computeJTSPeer();
 
     /**
      * This method must be called by subclasses whenever the user makes a change
@@ -60,7 +60,7 @@ public abstract class GenericCurveImpl implements GenericCurve, JTSGeometry {
      * creates a Geometry from a JTS geometry.  This prevents the Geometry from
      * having to recompute the JTS peer the first time.
      */
-    protected final void setJTSPeer(com.vividsolutions.jts.geom.Geometry g) {
+    protected final void setJTSPeer(org.locationtech.jts.geom.Geometry g) {
         jtsPeer = g;
     }
 
@@ -69,7 +69,7 @@ public abstract class GenericCurveImpl implements GenericCurve, JTSGeometry {
      * changed since the last time this method was called, it will return the
      * exact same object.
      */
-    public final com.vividsolutions.jts.geom.Geometry getJTSGeometry() {
+    public final org.locationtech.jts.geom.Geometry getJTSGeometry() {
         if (jtsPeer == null) {
             jtsPeer = computeJTSPeer();
         }

@@ -24,9 +24,9 @@ import org.geotools.graph.build.basic.BasicGraphBuilder;
 import org.geotools.graph.structure.Graph;
 import org.geotools.graph.structure.Node;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Polygon;
 
 /**
  * 

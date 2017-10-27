@@ -13,7 +13,7 @@ package org.geotools.geometry.jts.spatialschema.geometry.complex;
 import org.geotools.geometry.jts.spatialschema.geometry.GeometryImpl;
 import org.geotools.geometry.jts.JTSGeometry;
 import org.geotools.geometry.jts.JTSUtils;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 import java.util.ArrayList;
 import java.util.Collection;

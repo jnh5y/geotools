@@ -27,7 +27,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.opengis.filter.Filter;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 public class FilterTypeVisitorTest {
 

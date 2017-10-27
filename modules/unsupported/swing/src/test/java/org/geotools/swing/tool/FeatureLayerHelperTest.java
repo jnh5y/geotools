@@ -21,7 +21,7 @@ package org.geotools.swing.tool;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 import org.geotools.data.simple.SimpleFeatureIterator;
 import org.geotools.data.simple.SimpleFeatureSource;

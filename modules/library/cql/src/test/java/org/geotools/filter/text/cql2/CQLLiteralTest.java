@@ -29,8 +29,8 @@ import org.opengis.filter.expression.Expression;
 import org.opengis.filter.expression.Literal;
 import org.opengis.filter.spatial.BinarySpatialOperator;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.io.WKTReader;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.io.WKTReader;
 
 /**
  * Literal parser test
@@ -88,7 +88,7 @@ public class CQLLiteralTest {
         geom = (Literal) result.getExpression2();
 
         Assert.assertNotNull(geom.getValue());
-        Assert.assertTrue(geom.getValue() instanceof com.vividsolutions.jts.geom.Point);
+        Assert.assertTrue(geom.getValue() instanceof org.locationtech.jts.geom.Point);
 
         // LineString
         result = (BinarySpatialOperator) CompilerUtil.parseFilter(this.language,"WITHIN(ATTR1, LINESTRING(1 2, 10 15))");
@@ -96,7 +96,7 @@ public class CQLLiteralTest {
         geom = (Literal) result.getExpression2();
 
         Assert.assertNotNull(geom.getValue());
-        Assert.assertTrue(geom.getValue() instanceof com.vividsolutions.jts.geom.LineString);
+        Assert.assertTrue(geom.getValue() instanceof org.locationtech.jts.geom.LineString);
 
         // Polygon
         result = (BinarySpatialOperator) CompilerUtil.parseFilter(this.language,
@@ -105,7 +105,7 @@ public class CQLLiteralTest {
         geom = (Literal) result.getExpression2();
 
         Assert.assertNotNull(geom.getValue());
-        Assert.assertTrue(geom.getValue() instanceof com.vividsolutions.jts.geom.Polygon);
+        Assert.assertTrue(geom.getValue() instanceof org.locationtech.jts.geom.Polygon);
 
         // MultiPoint
         result = (BinarySpatialOperator) CompilerUtil.parseFilter(this.language,
@@ -114,7 +114,7 @@ public class CQLLiteralTest {
         geom = (Literal) result.getExpression2();
 
         Assert.assertNotNull(geom.getValue());
-        Assert.assertTrue(geom.getValue() instanceof com.vividsolutions.jts.geom.MultiPoint);
+        Assert.assertTrue(geom.getValue() instanceof org.locationtech.jts.geom.MultiPoint);
 
         // MultiLineString
         result = (BinarySpatialOperator) CompilerUtil.parseFilter(this.language,
@@ -123,7 +123,7 @@ public class CQLLiteralTest {
         geom = (Literal) result.getExpression2();
 
         Assert.assertNotNull(geom.getValue());
-        Assert.assertTrue(geom.getValue() instanceof com.vividsolutions.jts.geom.MultiLineString);
+        Assert.assertTrue(geom.getValue() instanceof org.locationtech.jts.geom.MultiLineString);
 
         // MultiPolygon
         result = (BinarySpatialOperator) CompilerUtil.parseFilter(this.language,
@@ -132,7 +132,7 @@ public class CQLLiteralTest {
         geom = (Literal) result.getExpression2();
 
         Assert.assertNotNull(geom.getValue());
-        Assert.assertTrue(geom.getValue() instanceof com.vividsolutions.jts.geom.MultiPolygon);
+        Assert.assertTrue(geom.getValue() instanceof org.locationtech.jts.geom.MultiPolygon);
 
         // ENVELOPE
         result = (BinarySpatialOperator) CompilerUtil.parseFilter(this.language,
@@ -141,7 +141,7 @@ public class CQLLiteralTest {
         geom = (Literal) result.getExpression2();
 
         Assert.assertNotNull(geom.getValue());
-        Assert.assertTrue(geom.getValue() instanceof com.vividsolutions.jts.geom.Polygon);
+        Assert.assertTrue(geom.getValue() instanceof org.locationtech.jts.geom.Polygon);
     }
 
     /**

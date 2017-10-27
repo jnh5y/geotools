@@ -25,7 +25,7 @@ import org.geotools.resources.coverage.CoverageUtilities;
 import org.geotools.util.URLs;
 import org.geotools.util.Utilities;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Factory class used for returning a {@link MultiLevelROIProvider} based on the input footprint properties

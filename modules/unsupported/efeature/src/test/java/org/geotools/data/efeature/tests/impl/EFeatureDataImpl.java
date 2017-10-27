@@ -11,7 +11,7 @@ import org.geotools.data.efeature.impl.EFeatureImpl;
 import org.geotools.data.efeature.tests.EFeatureData;
 import org.geotools.data.efeature.tests.EFeatureTestsPackage;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * <!-- begin-user-doc -->

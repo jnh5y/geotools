@@ -53,9 +53,9 @@ import org.opengis.filter.spatial.Disjoint;
 import org.opengis.style.ContrastMethod;
 import org.opengis.style.GraphicalSymbol;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.Polygon;
 
 import static org.junit.Assert.assertNotNull;
 

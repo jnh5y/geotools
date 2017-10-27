@@ -16,7 +16,7 @@
  */
 package org.geotools.graph.build.line;
 
-import com.vividsolutions.jts.geom.*;
+import org.locationtech.jts.geom.*;
 import org.geotools.graph.structure.Edge;
 import org.geotools.graph.structure.Graphable;
 import org.geotools.graph.structure.Node;
@@ -34,8 +34,8 @@ import java.util.List;
  * determine when to create underlying objects. For this reason it is not recommended 
  * to modify the visited flag of any graph components. 
  * 
- * @see com.vividsolutions.jts.geom.LineString
- * @see com.vividsolutions.jts.geom.Point
+ * @see org.locationtech.jts.geom.LineString
+ * @see org.locationtech.jts.geom.Point
  * 
  * @author Justin Deoliveira, Refractions Research Inc, jdeolive@refractions.net
  * @author Anders Bakkevold, Bouvet AS, bakkedev@gmail.com

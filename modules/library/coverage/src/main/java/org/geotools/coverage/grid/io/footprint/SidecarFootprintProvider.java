@@ -28,7 +28,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.geotools.util.logging.Logging;
 import org.opengis.feature.simple.SimpleFeature;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * A footprint provider looking for sidecar files (SHP, WKB, WKT, ...).

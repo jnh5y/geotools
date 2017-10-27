@@ -18,8 +18,8 @@ package org.geotools.gml3.bindings;
 
 import org.geotools.gml3.GML3TestSupport;
 
-import com.vividsolutions.jts.geom.MultiPolygon;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.MultiPolygon;
+import org.locationtech.jts.geom.Polygon;
 
 /**
  * 

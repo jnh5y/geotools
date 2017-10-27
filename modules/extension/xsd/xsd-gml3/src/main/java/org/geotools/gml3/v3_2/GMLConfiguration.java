@@ -76,7 +76,7 @@ import org.geotools.xml.Configuration;
 import org.geotools.xs.XS;
 import org.picocontainer.MutablePicoContainer;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 
 /**
  * Parser configuration for the http://www.opengis.net/gml/3.2 schema.

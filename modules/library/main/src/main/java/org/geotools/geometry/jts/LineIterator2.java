@@ -20,8 +20,8 @@ import java.awt.geom.AffineTransform;
 import java.awt.geom.PathIterator;
 
 
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.LineString;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.LineString;
 
 
 /**

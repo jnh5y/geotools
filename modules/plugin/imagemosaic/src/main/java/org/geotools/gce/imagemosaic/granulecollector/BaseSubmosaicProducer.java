@@ -56,8 +56,8 @@ import org.geotools.image.ImageWorker;
 import org.geotools.resources.coverage.CoverageUtilities;
 import org.geotools.util.URLs;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
 
 import it.geosolutions.jaiext.vectorbin.ROIGeometry;
 

@@ -20,7 +20,7 @@ package org.geotools.swing;
 import java.awt.Rectangle;
 import java.util.Arrays;
 
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Polygon;
 
 import org.geotools.data.collection.ListFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureCollection;

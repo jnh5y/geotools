@@ -31,7 +31,7 @@ import org.opengis.filter.FilterVisitor;
 import org.opengis.filter.Id;
 import org.opengis.filter.expression.PropertyName;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 
 /**
  * This test checks that our filter visitor examples on the wiki are in working order.

@@ -41,8 +41,8 @@ import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.filter.FilterFactory;
 import org.opengis.filter.expression.Expression;
 
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.io.WKTWriter;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.io.WKTWriter;
 
 /**
  * Unit tests for WindBarbs factory

@@ -18,8 +18,8 @@ package org.geotools.gml3.bindings;
 
 import org.geotools.gml3.GML3TestSupport;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.LinearRing;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.LinearRing;
 
 
 /**

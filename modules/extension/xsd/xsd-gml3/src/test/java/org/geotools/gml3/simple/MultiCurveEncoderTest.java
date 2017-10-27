@@ -21,7 +21,7 @@ import org.geotools.geometry.jts.WKTReader2;
 import org.geotools.gml3.GML;
 import org.w3c.dom.Document;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 public class MultiCurveEncoderTest extends GeometryEncoderTestSupport {
 

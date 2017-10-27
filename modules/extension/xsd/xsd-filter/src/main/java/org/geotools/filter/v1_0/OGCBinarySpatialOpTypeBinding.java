@@ -21,7 +21,7 @@ import java.util.List;
 
 import org.picocontainer.MutablePicoContainer;
 import javax.xml.namespace.QName;
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 import org.opengis.filter.FilterFactory2;
 import org.opengis.filter.expression.Function;
 import org.opengis.filter.spatial.BinarySpatialOperator;

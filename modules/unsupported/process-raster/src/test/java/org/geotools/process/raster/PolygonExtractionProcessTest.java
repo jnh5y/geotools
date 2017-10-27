@@ -30,9 +30,9 @@ import java.util.Set;
 
 import javax.imageio.ImageIO;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.Polygon;
 
 import org.jaitools.numeric.Range;
 import org.geotools.coverage.CoverageFactoryFinder;

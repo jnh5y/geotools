@@ -23,16 +23,16 @@ import java.util.List;
 
 import org.geotools.geometry.jts.CurvedGeometry;
 
-import com.vividsolutions.jts.algorithm.RobustDeterminant;
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.CoordinateSequenceComparator;
-import com.vividsolutions.jts.geom.CoordinateSequenceFilter;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.geom.impl.CoordinateArraySequence;
+import org.locationtech.jts.algorithm.RobustDeterminant;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.CoordinateSequenceComparator;
+import org.locationtech.jts.geom.CoordinateSequenceFilter;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.impl.CoordinateArraySequence;
 
 /**
  * Utility functions for coordinate sequences (extends the same named JTS class)
@@ -42,7 +42,7 @@ import com.vividsolutions.jts.geom.impl.CoordinateArraySequence;
  *
  * @source $URL$
  */
-public class CoordinateSequences extends com.vividsolutions.jts.geom.CoordinateSequences {
+public class CoordinateSequences extends org.locationtech.jts.geom.CoordinateSequences {
     
     /**
      * Computes whether a ring defined by an array of {@link Coordinate}s is

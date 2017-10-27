@@ -27,7 +27,7 @@ import org.geotools.data.shapefile.index.quadtree.Node;
 import org.geotools.data.shapefile.index.quadtree.StoreException;
 import org.geotools.resources.NIOUtilities;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * DOCUMENT ME!

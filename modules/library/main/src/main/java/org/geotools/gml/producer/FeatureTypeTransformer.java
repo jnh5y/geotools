@@ -39,14 +39,14 @@ import org.xml.sax.ContentHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryCollection;
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.geom.MultiLineString;
-import com.vividsolutions.jts.geom.MultiPoint;
-import com.vividsolutions.jts.geom.MultiPolygon;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryCollection;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.geom.MultiLineString;
+import org.locationtech.jts.geom.MultiPoint;
+import org.locationtech.jts.geom.MultiPolygon;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.Polygon;
 
 
 /**
@@ -128,32 +128,32 @@ import com.vividsolutions.jts.geom.Polygon;
  * xs:boolean
  * </td></tr>
  * <tr><td>
- * com.vividsolutions.jts.geom.Point
+ * org.locationtech.jts.geom.Point
  * </td><td>
  * gml:PointPropertyType
  * </td></tr>
  * <tr><td>
- * com.vividsolutions.jts.geom.LineString
+ * org.locationtech.jts.geom.LineString
  * </td><td>
  * gml:LineStringPropertyType
  * </td></tr>
  * <tr><td>
- * com.vividsolutions.jts.geom.Polygon
+ * org.locationtech.jts.geom.Polygon
  * </td><td>
  * gml:PolygonPropertyType
  * </td></tr>
  * <tr><td>
- * com.vividsolutions.jts.geom.MultiPoint
+ * org.locationtech.jts.geom.MultiPoint
  * </td><td>
  * gml:MultiPointPropertyType
  * </td></tr>
  * <tr><td>
- * com.vividsolutions.jts.geom.MultiLineString
+ * org.locationtech.jts.geom.MultiLineString
  * </td><td>
  * gml:MutliLineStringPropertyType
  * </td></tr>
  * <tr><td>
- * com.vividsolutions.jts.geom.MultiPolygon
+ * org.locationtech.jts.geom.MultiPolygon
  * </td><td>
  * gml:MultiPolygonPropertyType
  * </td></tr>

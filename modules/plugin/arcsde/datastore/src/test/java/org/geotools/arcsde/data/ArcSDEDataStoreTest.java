@@ -53,8 +53,8 @@ import org.opengis.feature.type.FeatureType;
 import org.opengis.filter.FilterFactory;
 
 import com.esri.sde.sdk.client.SeException;
-import com.vividsolutions.jts.geom.MultiLineString;
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.MultiLineString;
+import org.locationtech.jts.geom.Point;
 
 /**
  * ArcSDEDAtaStore test cases

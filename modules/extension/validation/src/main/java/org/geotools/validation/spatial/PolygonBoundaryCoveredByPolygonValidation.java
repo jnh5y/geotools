@@ -22,9 +22,9 @@ import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.validation.ValidationResults;
 import org.opengis.feature.simple.SimpleFeature;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.Polygon;
 
 
 /**
@@ -71,7 +71,7 @@ public class PolygonBoundaryCoveredByPolygonValidation
      * @throws Exception DOCUMENT ME!
      *
      * @see org.geotools.validation.IntegrityValidation#validate(java.util.Map,
-     *      com.vividsolutions.jts.geom.Envelope,
+     *      org.locationtech.jts.geom.Envelope,
      *      org.geotools.validation.ValidationResults)
      */
     public boolean validate(Map layers, Envelope envelope,

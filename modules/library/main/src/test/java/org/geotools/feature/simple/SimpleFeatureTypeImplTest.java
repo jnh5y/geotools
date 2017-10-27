@@ -17,7 +17,7 @@
 
 package org.geotools.feature.simple;
 
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 import junit.framework.TestCase;
 import org.geotools.feature.NameImpl;
 import org.geotools.feature.type.FeatureTypeFactoryImpl;

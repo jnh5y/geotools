@@ -22,7 +22,7 @@ import org.geotools.gml2.GML;
 import org.geotools.xml.InstanceComponent;
 import org.geotools.xml.SimpleBinding;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 
 /**
@@ -89,9 +89,9 @@ public class GMLNullTypeBinding implements SimpleBinding {
 
     /**
      * <!-- begin-user-doc -->
-     * Returns an object of type @link com.vividsolutions.jts.geom.Envelope. In
+     * Returns an object of type @link org.locationtech.jts.geom.Envelope. In
      * the event that a <b>null</b> element is given, a null Envelope is
-     * returned by calling @link com.vividsolutions.jts.geom.Envelope#setToNull().
+     * returned by calling @link org.locationtech.jts.geom.Envelope#setToNull().
      * <!-- end-user-doc -->
      *
      * @generated modifiable

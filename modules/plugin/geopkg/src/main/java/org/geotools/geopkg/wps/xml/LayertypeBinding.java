@@ -22,7 +22,7 @@ import java.net.URI;
 import org.geotools.geopkg.wps.GeoPackageProcessRequest;
 import org.geotools.xml.*;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 
 import javax.xml.namespace.QName;

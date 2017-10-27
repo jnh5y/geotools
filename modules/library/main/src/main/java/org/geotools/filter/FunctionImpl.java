@@ -35,7 +35,7 @@ import org.opengis.filter.expression.Function;
 import org.opengis.filter.expression.Literal;
 import org.opengis.parameter.Parameter;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Default implementation of a Function; you may extend this class to
@@ -337,7 +337,7 @@ public class FunctionImpl extends ExpressionAbstract implements Function {
      * The <tt>type</tt> parameter may be specified relative to the following well known packages:
      * <ul>
      *   <li><tt>java.lang</tt>
-     *   <li><tt>com.vividsolutions.jts.geom</tt>
+     *   <li><tt>org.locationtech.jts.geom</tt>
      * </ul>
      * Otherwise it must be specified as a full qualified class name.
      * </p>
@@ -379,7 +379,7 @@ public class FunctionImpl extends ExpressionAbstract implements Function {
                 } catch (ClassNotFoundException e1) {
                     //try prefixing with jts.geom
                     try {
-                        type = Class.forName("com.vividsolutions.jts.geom."+grp);
+                        type = Class.forName("org.locationtech.jts.geom."+grp);
                     } catch (ClassNotFoundException e2) {
                         //throw back the original
                         throw (IllegalArgumentException) 

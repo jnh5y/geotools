@@ -52,7 +52,7 @@ import org.opengis.filter.capability.FilterCapabilities;
 import org.opengis.filter.capability.Operator;
 import org.w3c.dom.Document;
 
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 
 import junit.framework.TestCase;
 import net.opengis.fes20.FilterCapabilitiesType;

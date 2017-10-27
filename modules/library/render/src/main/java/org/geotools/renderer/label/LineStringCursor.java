@@ -18,9 +18,9 @@ package org.geotools.renderer.label;
 
 import java.util.Arrays;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.LineString;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.LineString;
 
 /**
  * Allows to move a point cursor along the path of a LineString using a

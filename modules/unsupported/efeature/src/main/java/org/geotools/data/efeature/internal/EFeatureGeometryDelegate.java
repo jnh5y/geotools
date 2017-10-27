@@ -21,7 +21,7 @@ import org.opengis.feature.type.Name;
 import org.opengis.filter.identity.Identifier;
 import org.opengis.geometry.BoundingBox;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * An abstract implementation of the model data type {@link EFeatureGeometry}.

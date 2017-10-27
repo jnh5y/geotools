@@ -46,8 +46,8 @@ import javax.media.jai.iterator.WritableRandomIter;
 import org.geotools.geometry.jts.JTS;
 import org.geotools.util.logging.Logging;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Polygon;
 
 import org.geotools.util.SoftValueHashMap;
 import it.geosolutions.jaiext.iterators.RandomIterFactory;

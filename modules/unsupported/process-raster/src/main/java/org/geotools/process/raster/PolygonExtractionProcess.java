@@ -31,9 +31,9 @@ import org.jaitools.media.jai.vectorize.VectorizeDescriptor;
 import org.jaitools.media.jai.vectorize.VectorizeRIF;
 import org.jaitools.numeric.Range;
 
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.geom.util.AffineTransformation;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.util.AffineTransformation;
 
 import org.geotools.process.factory.DescribeParameter;
 import org.geotools.process.factory.DescribeProcess;

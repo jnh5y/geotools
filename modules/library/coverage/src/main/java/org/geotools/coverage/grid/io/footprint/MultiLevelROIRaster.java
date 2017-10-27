@@ -42,7 +42,7 @@ import org.geotools.util.logging.Logging;
 import org.opengis.feature.simple.SimpleFeature;
 
 import com.sun.media.jai.operator.ImageReadDescriptor;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 import it.geosolutions.imageio.maskband.DatasetLayout;
 

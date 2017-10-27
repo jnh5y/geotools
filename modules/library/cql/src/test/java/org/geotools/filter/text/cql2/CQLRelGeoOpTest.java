@@ -29,7 +29,7 @@ import org.opengis.filter.spatial.Beyond;
 import org.opengis.filter.spatial.DWithin;
 import org.opengis.filter.spatial.DistanceBufferOperator;
 
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 
 /**
  * Test RelGeo Operations

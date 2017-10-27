@@ -22,7 +22,7 @@ import static org.geotools.data.wfs.WFSTestData.CUBEWERX_GOVUNITCE;
 import org.geotools.data.wfs.WFSDataStoreFactory;
 import org.geotools.data.wfs.online.AbstractWfsDataStoreOnlineTest;
 import org.junit.Ignore;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Polygon;
 
 /**
  * 

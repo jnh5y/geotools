@@ -24,7 +24,7 @@ import javax.media.jai.ROI;
 
 import org.geotools.coverage.grid.io.imageio.ReadType;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * A ROI provider that handles multi-scale ROI

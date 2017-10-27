@@ -23,7 +23,7 @@ import static org.junit.Assert.assertTrue;
 import org.geotools.grid.PolygonElement;
 import org.geotools.grid.TestBase;
 
-import com.vividsolutions.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Coordinate;
 
 /**
  * Base class for Hexagon unit tests.

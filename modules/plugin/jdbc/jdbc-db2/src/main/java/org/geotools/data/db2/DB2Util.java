@@ -33,8 +33,8 @@ import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.vividsolutions.jts.geom.*;
-import com.vividsolutions.jts.io.WKTWriter;
+import org.locationtech.jts.geom.*;
+import org.locationtech.jts.io.WKTWriter;
 
 /**
  * 

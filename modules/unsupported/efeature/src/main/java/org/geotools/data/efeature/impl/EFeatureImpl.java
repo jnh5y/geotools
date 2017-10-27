@@ -20,7 +20,7 @@ import org.geotools.data.efeature.util.EFeatureAttributeList;
 import org.geotools.data.efeature.util.EFeatureGeometryList;
 import org.opengis.feature.Feature;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * <!-- begin-user-doc -->

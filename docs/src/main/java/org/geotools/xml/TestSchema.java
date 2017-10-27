@@ -5,8 +5,8 @@ import java.util.List;
 
 import org.opengis.feature.Feature;
 
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Point;
 
 /**
  * The following is a placeholder simply to make a UML Diagram.

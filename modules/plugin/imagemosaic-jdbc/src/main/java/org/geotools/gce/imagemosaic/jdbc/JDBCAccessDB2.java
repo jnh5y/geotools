@@ -28,7 +28,7 @@ import org.geotools.geometry.GeneralEnvelope;
 import org.geotools.referencing.CRS;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.io.WKBWriter;
+import org.locationtech.jts.io.WKBWriter;
 
 /**
  * JDBCAccess Implentation for DB2 Spatial Extended

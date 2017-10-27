@@ -34,7 +34,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.opengis.feature.Feature;
 
-import com.vividsolutions.jts.geom.Point;
+import org.locationtech.jts.geom.Point;
 
 /**
  * 

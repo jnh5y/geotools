@@ -19,17 +19,17 @@ package org.geotools.geometry.jts;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.CoordinateSequence;
-import com.vividsolutions.jts.geom.Envelope;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryCollection;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.LineString;
-import com.vividsolutions.jts.geom.LinearRing;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.geom.impl.PackedCoordinateSequence;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.CoordinateSequence;
+import org.locationtech.jts.geom.Envelope;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryCollection;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.LineString;
+import org.locationtech.jts.geom.LinearRing;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.impl.PackedCoordinateSequence;
 
 /**
  * @TODO class description
@@ -197,7 +197,7 @@ public class LiteCoordinateSequence extends PackedCoordinateSequence {
     }
 
     /**
-     * @see com.vividsolutions.jts.geom.CoordinateSequence#getCoordinate(int)
+     * @see org.locationtech.jts.geom.CoordinateSequence#getCoordinate(int)
      */
     public Coordinate getCoordinateInternal(int i) {
       double x = coords[i * dimension];
@@ -207,7 +207,7 @@ public class LiteCoordinateSequence extends PackedCoordinateSequence {
     }
 
     /**
-     * @see com.vividsolutions.jts.geom.CoordinateSequence#size()
+     * @see org.locationtech.jts.geom.CoordinateSequence#size()
      */
     public int size() {
    		return size;
@@ -223,7 +223,7 @@ public class LiteCoordinateSequence extends PackedCoordinateSequence {
     }
 
     /**
-     * @see com.vividsolutions.jts.geom.CoordinateSequence#getOrdinate(int, int)
+     * @see org.locationtech.jts.geom.CoordinateSequence#getOrdinate(int, int)
      *      Beware, for performace reasons the ordinate index is not checked, if
      *      it's over dimensions you may not get an exception but a meaningless
      *      value.
@@ -233,21 +233,21 @@ public class LiteCoordinateSequence extends PackedCoordinateSequence {
     }
     
     /**
-     * @see com.vividsolutions.jts.geom.CoordinateSequence#getX(int)
+     * @see org.locationtech.jts.geom.CoordinateSequence#getX(int)
      */
     public double getX(int index) {
         return coords[index * dimension];
     }
 
     /**
-     * @see com.vividsolutions.jts.geom.CoordinateSequence#getY(int)
+     * @see org.locationtech.jts.geom.CoordinateSequence#getY(int)
      */
     public double getY(int index) {
         return coords[index * dimension + 1];
     }
 
     /**
-     * @see com.vividsolutions.jts.geom.PackedCoordinateSequence#setOrdinate(int,
+     * @see org.locationtech.jts.geom.PackedCoordinateSequence#setOrdinate(int,
      *      int, double)
      */
     public void setOrdinate(int index, int ordinate, double value) {

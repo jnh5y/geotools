@@ -26,14 +26,14 @@ import org.geotools.graph.structure.Graph;
 import org.geotools.graph.structure.Graphable;
 import org.geotools.graph.structure.Node;
 
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.index.quadtree.Quadtree;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.index.quadtree.Quadtree;
 
 /**
  * An implementation of GraphGenerator used to build graphs from a set 
  * of polygons.
  * <p>
- * This graph generator takes {@link com.vividsolutions.jts.geom.Polygon} 
+ * This graph generator takes {@link org.locationtech.jts.geom.Polygon} 
  * objects as input when constructing a graph. The following code constructs
  * a graph from a set of polygons.
  * 

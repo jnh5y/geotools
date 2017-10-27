@@ -14,7 +14,7 @@ import org.geotools.geometry.jts.spatialschema.geometry.primitive.CurveBoundaryI
 import org.geotools.geometry.jts.spatialschema.geometry.primitive.PointImpl;
 import org.geotools.geometry.jts.JTSGeometry;
 import org.geotools.geometry.jts.JTSUtils;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 import java.util.List;
 
@@ -263,8 +263,8 @@ public class LineStringImpl extends GenericCurveImpl
      */
     protected Geometry computeJTSPeer() {
         int n = controlPoints.size();
-        com.vividsolutions.jts.geom.Coordinate [] coords =
-            new com.vividsolutions.jts.geom.Coordinate[n];
+        org.locationtech.jts.geom.Coordinate [] coords =
+            new org.locationtech.jts.geom.Coordinate[n];
         for (int i=0; i<n; i++) {
             coords[i] = JTSUtils.directPositionToCoordinate(
                 (DirectPosition) controlPoints.get(i));

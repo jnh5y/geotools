@@ -72,7 +72,7 @@ public abstract class SubHandler {
      * @param coordinate Coordinate to add
      */
     public abstract void addCoordinate(
-        com.vividsolutions.jts.geom.Coordinate coordinate);
+        org.locationtech.jts.geom.Coordinate coordinate);
 
     /**
      * Tells the handler that it just saw a subhandler.
@@ -100,8 +100,8 @@ public abstract class SubHandler {
      *
      * @return An OGC simple geometry type for return.
      */
-    public abstract com.vividsolutions.jts.geom.Geometry create(
-        com.vividsolutions.jts.geom.GeometryFactory geometryFactory);
+    public abstract org.locationtech.jts.geom.Geometry create(
+        org.locationtech.jts.geom.GeometryFactory geometryFactory);
 
     /**
      * Describes the handler.

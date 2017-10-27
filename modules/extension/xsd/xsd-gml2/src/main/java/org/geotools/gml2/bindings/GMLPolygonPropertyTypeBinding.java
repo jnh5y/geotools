@@ -26,7 +26,7 @@ import org.geotools.xml.AbstractComplexBinding;
 import org.geotools.xml.ElementInstance;
 import org.geotools.xml.Node;
 
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Polygon;
 
 
 /**
@@ -81,7 +81,7 @@ public class GMLPolygonPropertyTypeBinding extends AbstractComplexBinding {
 
     /**
      * <!-- begin-user-doc -->
-     * This object returns an object of type @link com.vividsolutions.jts.geom.Polygon
+     * This object returns an object of type @link org.locationtech.jts.geom.Polygon
      * <!-- end-user-doc -->
      *
      * @generated modifiable

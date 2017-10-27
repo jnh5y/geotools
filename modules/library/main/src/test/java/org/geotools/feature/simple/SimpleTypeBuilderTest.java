@@ -30,8 +30,8 @@ import org.opengis.feature.type.GeometryType;
 import org.opengis.feature.type.Schema;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.Polygon;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.Polygon;
 
 /**
  * 

@@ -61,8 +61,8 @@ import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.NamespaceSupport;
 
-import com.vividsolutions.jts.geom.EmptyGeometry;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.EmptyGeometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * Base class for several MappingFeatureImplementation's. 

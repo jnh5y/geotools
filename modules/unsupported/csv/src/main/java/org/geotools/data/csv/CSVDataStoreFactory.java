@@ -39,7 +39,7 @@ import org.geotools.feature.type.FeatureTypeFactoryImpl;
 import org.geotools.util.KVP;
 import org.geotools.util.URLs;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 
 public class CSVDataStoreFactory implements FileDataStoreFactorySpi {
 

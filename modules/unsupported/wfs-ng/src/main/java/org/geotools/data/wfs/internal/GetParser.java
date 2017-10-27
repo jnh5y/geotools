@@ -19,7 +19,7 @@ package org.geotools.data.wfs.internal;
 import java.io.IOException;
 import org.opengis.feature.Feature;
 import org.opengis.feature.type.FeatureType;
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.GeometryFactory;
 
 /**
  * Interface to return appropriate feature parser.

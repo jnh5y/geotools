@@ -30,7 +30,7 @@ import java.sql.Types;
 import org.geotools.util.Converters;
 import org.opengis.feature.simple.SimpleFeatureType;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 
 /**

@@ -31,7 +31,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.ContentHandler;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 import org.xml.sax.helpers.AttributesImpl;
 
 public class PropertyTypeBinding extends AbstractComplexEMFBinding {

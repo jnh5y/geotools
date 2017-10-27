@@ -34,7 +34,7 @@ import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.feature.type.GeometryType;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 public class GeoJSONDataStoreTest {
 	GeoJSONDataStore ds;
@@ -89,7 +89,7 @@ public class GeoJSONDataStoreTest {
 		FeatureReader<SimpleFeatureType, SimpleFeature> reader = fds.getFeatureReader(query, null);
 		SimpleFeatureType schema = reader.getFeatureType();
 		//System.out.println(schema);
-		assertEquals("com.vividsolutions.jts.geom.Point", schema.getGeometryDescriptor().getType().getBinding().getCanonicalName());
+		assertEquals("org.locationtech.jts.geom.Point", schema.getGeometryDescriptor().getType().getBinding().getCanonicalName());
 		assertNotNull(schema);
 		int count = 0;
 		while (reader.hasNext()) {
@@ -112,7 +112,7 @@ public class GeoJSONDataStoreTest {
 		FeatureReader<SimpleFeatureType, SimpleFeature> reader = fds.getFeatureReader(query, null);
 		SimpleFeatureType schema = reader.getFeatureType();
 		System.out.println(schema);
-		assertEquals("com.vividsolutions.jts.geom.Point", schema.getGeometryDescriptor().getType().getBinding().getName());
+		assertEquals("org.locationtech.jts.geom.Point", schema.getGeometryDescriptor().getType().getBinding().getName());
 		assertNotNull(schema);
 		int count = 0;
 		while (reader.hasNext()) {

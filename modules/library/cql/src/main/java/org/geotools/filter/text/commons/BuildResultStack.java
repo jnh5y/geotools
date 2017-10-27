@@ -30,7 +30,7 @@ import org.opengis.filter.expression.PropertyName;
 import org.opengis.temporal.Period;
 import org.opengis.temporal.Position;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 
 /**

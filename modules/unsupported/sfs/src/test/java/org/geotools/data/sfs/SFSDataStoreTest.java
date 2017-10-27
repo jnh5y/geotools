@@ -30,7 +30,7 @@ import org.geotools.feature.NameImpl;
 import org.geotools.referencing.CRS;
 import org.opengis.feature.type.Name;
 
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * 

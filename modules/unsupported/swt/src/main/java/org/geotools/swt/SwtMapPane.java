@@ -434,7 +434,7 @@ public class SwtMapPane extends Canvas implements Listener, MapLayerListListener
             CoordinateReferenceSystem targetCRS = crs;
 
             MathTransform transform = CRS.findMathTransform(sourceCRS, targetCRS);
-            com.vividsolutions.jts.geom.Envelope newJtsEnv = JTS.transform(rEnv, transform);
+            org.locationtech.jts.geom.Envelope newJtsEnv = JTS.transform(rEnv, transform);
 
             ReferencedEnvelope newEnvelope = new ReferencedEnvelope(newJtsEnv, targetCRS);
             content.getViewport().setBounds(newEnvelope);

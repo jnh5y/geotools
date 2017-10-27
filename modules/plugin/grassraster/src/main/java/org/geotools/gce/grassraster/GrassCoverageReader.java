@@ -128,7 +128,7 @@ public class GrassCoverageReader extends AbstractGridCoverage2DReader implements
             try {
                 crs = jgMapEnvironment.getCoordinateReferenceSystem();
                 JGrassRegion fileRegion = jgMapEnvironment.getFileRegion();
-                com.vividsolutions.jts.geom.Envelope env = fileRegion.getEnvelope();
+                org.locationtech.jts.geom.Envelope env = fileRegion.getEnvelope();
                 originalEnvelope = new GeneralEnvelope(new ReferencedEnvelope(env.getMinX(), env.getMaxX(), env.getMinY(),
                         env.getMaxY(), crs));
                 originalGridRange = new GridEnvelope2D(0, 0, fileRegion.getCols(), fileRegion.getRows());

@@ -33,8 +33,8 @@ import org.geotools.gml.GMLFilterGeometry;
 import org.geotools.test.TestData;
 import org.xml.sax.helpers.ParserAdapter;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.GeometryFactory;
 
 
 /**

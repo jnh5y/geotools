@@ -21,12 +21,12 @@ package org.geotools.gml;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.LinearRing;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.geom.TopologyException;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.LinearRing;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.TopologyException;
 
 
 /**
@@ -42,7 +42,7 @@ import com.vividsolutions.jts.geom.TopologyException;
 public class SubHandlerPolygon extends SubHandler {
     /** The logger for the GML module. */
     private static final Logger LOGGER = org.geotools.util.logging.Logging.getLogger("org.geotools.gml");
-    protected static com.vividsolutions.jts.algorithm.CGAlgorithms cga = new com.vividsolutions.jts.algorithm.RobustCGAlgorithms();
+    protected static org.locationtech.jts.algorithm.CGAlgorithms cga = new org.locationtech.jts.algorithm.RobustCGAlgorithms();
 
     /** Factory for creating the Polygon geometry. */
     private GeometryFactory geometryFactory = new GeometryFactory();
