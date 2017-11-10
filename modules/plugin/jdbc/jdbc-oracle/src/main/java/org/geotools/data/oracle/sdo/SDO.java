@@ -34,7 +34,7 @@ import org.geotools.geometry.jts.CurvedGeometryFactory;
 import org.geotools.geometry.jts.JTS;
 import org.geotools.geometry.jts.LiteCoordinateSequenceFactory;
 
-import org.locationtech.jts.algorithm.RobustCGAlgorithms;
+import org.locationtech.jts.algorithm.Orientation;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.CoordinateSequence;
 import org.locationtech.jts.geom.CoordinateSequenceFactory;
@@ -80,10 +80,7 @@ public final class SDO {
     private static final Logger LOGGER = org.geotools.util.logging.Logging.getLogger("org.geotools.data.oracle.sdo");
     public static final int SRID_NULL = -1;
 
-    /** Used to test for Counter Clockwise or Clockwise Linear Rings */
-    private static RobustCGAlgorithms clock = new RobustCGAlgorithms();
-
-    // 
+    //
     // Encoding Helper Functions
     //
 
@@ -1553,7 +1550,7 @@ public final class SDO {
      */
     public static CoordinateSequence counterClockWise(
         CoordinateSequenceFactory factory, CoordinateSequence ring) {
-        if (clock.isCCW(ring.toCoordinateArray())) {
+        if (Orientation.isCCW(ring.toCoordinateArray())) {
             return ring;
         }
 
@@ -1574,7 +1571,7 @@ public final class SDO {
      */
     private static CoordinateSequence clockWise(
         CoordinateSequenceFactory factory, CoordinateSequence ring) {
-        if (!clock.isCCW(ring.toCoordinateArray())) {
+        if (!Orientation.isCCW(ring.toCoordinateArray())) {
             return ring;
         }
         return Coordinates.reverse(factory, ring);
@@ -2690,7 +2687,7 @@ public final class SDO {
 
                 LinearRing ring = createLinearRing(gf, GTYPE, SRID, elemInfo, i, coords);
 
-                if (clock.isCCW(ring.getCoordinates())) { // it is an Interior Hole
+                if (Orientation.isCCW(ring.getCoordinates())) { // it is an Interior Hole
                     rings.add(ring);
                     i++;
                 } else { // it is the next Polygon! - get out of here

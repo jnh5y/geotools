@@ -1,5 +1,7 @@
 package org.locationtech.jts.geom;
 
+import org.locationtech.jts.geom.*;
+
 /**
  * 
  *
@@ -17,7 +19,7 @@ public class EmptyGeometry extends Geometry {
     }
 
     @Override
-    public Coordinate getCoordinate() {        
+    public Coordinate getCoordinate() {
         return null;
     }
 
@@ -83,6 +85,11 @@ public class EmptyGeometry extends Geometry {
     }
 
     @Override
+    public Geometry copy() {
+        return null;
+    }
+
+    @Override
     public void normalize() {
         
     }
@@ -101,7 +108,12 @@ public class EmptyGeometry extends Geometry {
     protected int compareToSameClass(Object o, CoordinateSequenceComparator comp) {
         return 0;
     }
-    
+
+    @Override
+    protected int getSortIndex() {
+        return 0;
+    }
+
     @Override
     public String toString()
     {

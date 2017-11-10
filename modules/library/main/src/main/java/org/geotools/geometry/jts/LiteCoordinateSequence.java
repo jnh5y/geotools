@@ -222,6 +222,11 @@ public class LiteCoordinateSequence extends PackedCoordinateSequence {
       return new LiteCoordinateSequence(clone, dimension);
     }
 
+    @Override
+    public PackedCoordinateSequence copy() {
+        return (PackedCoordinateSequence) clone();
+    }
+
     /**
      * @see org.locationtech.jts.geom.CoordinateSequence#getOrdinate(int, int)
      *      Beware, for performace reasons the ordinate index is not checked, if

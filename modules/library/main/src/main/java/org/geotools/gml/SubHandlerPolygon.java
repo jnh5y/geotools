@@ -21,6 +21,7 @@ package org.geotools.gml;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
+import org.locationtech.jts.algorithm.Orientation;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.GeometryFactory;
@@ -42,7 +43,6 @@ import org.locationtech.jts.geom.TopologyException;
 public class SubHandlerPolygon extends SubHandler {
     /** The logger for the GML module. */
     private static final Logger LOGGER = org.geotools.util.logging.Logging.getLogger("org.geotools.gml");
-    protected static org.locationtech.jts.algorithm.CGAlgorithms cga = new org.locationtech.jts.algorithm.RobustCGAlgorithms();
 
     /** Factory for creating the Polygon geometry. */
     private GeometryFactory geometryFactory = new GeometryFactory();
@@ -99,7 +99,7 @@ public class SubHandlerPolygon extends SubHandler {
                      * anticlockwise (counter clockwise) - so we reverse the
                      * points if necessary
                      */
-                    if (cga.isCCW(points)) {
+                    if (Orientation.isCCW(points)) {
                         LOGGER.finer("good hole found");
                         
  
@@ -134,7 +134,7 @@ public class SubHandlerPolygon extends SubHandler {
 
                     Coordinate[] points = outerBoundary.getCoordinates();
 
-                    if (cga.isCCW(points)) {
+                    if (Orientation.isCCW(points)) {
                         LOGGER.finer("bad outer ring - rebuilding");
                          //  System.out.println("rebuilding outer ring");
                         Coordinate[] newPoints = new Coordinate[points.length];
