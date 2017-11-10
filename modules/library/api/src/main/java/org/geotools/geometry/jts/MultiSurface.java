@@ -18,10 +18,7 @@ package org.geotools.geometry.jts;
 
 import java.util.List;
 
-import org.locationtech.jts.geom.CoordinateSequence;
-import org.locationtech.jts.geom.GeometryFactory;
-import org.locationtech.jts.geom.MultiPolygon;
-import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.*;
 
 /**
  * A subclass of {@link MultiPolygon} that can host also {@link CurvePolygon} and will linearize if
@@ -119,4 +116,13 @@ public class MultiSurface extends MultiPolygon implements MultiCurvedGeometry<Mu
         return 2;
     }
 
+    @Override
+    public Object clone() {
+        Polygon[] polys = new Polygon[geometries.length];
+        for (int i = 0; i < geometries.length ; i++) {
+            polys[i] = (Polygon) geometries[i];
+        }
+
+        return new MultiSurface(polys, factory, tolerance);
+    }
 }

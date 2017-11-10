@@ -381,6 +381,11 @@ public class CircularRing extends LinearRing implements SingleCurvedGeometry<Lin
         linearize().apply(filter);
     }
 
+    @Override
+    public Object clone() {
+        return new CircularRing(getControlPoints(), factory, getTolerance());
+    }
+
     public void normalize() {
         linearize().normalize();
     }

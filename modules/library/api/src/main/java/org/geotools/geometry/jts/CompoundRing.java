@@ -320,6 +320,10 @@ public class CompoundRing extends LinearRing implements CompoundCurvedGeometry<L
         linearize().apply(filter);
     }
 
+    @Override
+    public Object clone() {
+        return new CompoundRing(delegate);    }
+
     public void normalize() {
         linearize().normalize();
     }
