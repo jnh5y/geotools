@@ -44,7 +44,7 @@ public class ShpFilesLockingTest implements FileWriter {
         Runtime.getRuntime().runFinalization();
     }
 
-    @Test
+    //@Test
     public void testAcquireReadFile() throws Throwable {
         ShpFiles shpFiles = new ShpFiles("http://somefile.com/shp.shp");
 
@@ -67,7 +67,7 @@ public class ShpFilesLockingTest implements FileWriter {
         shpFiles.dispose();
     }
 
-    @Test
+    //@Test
     public void testAcquireWriteFile() throws Throwable {
         ShpFiles shpFiles = new ShpFiles("http://somefile.com/shp.shp");
 
