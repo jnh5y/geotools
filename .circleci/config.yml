@@ -10,7 +10,7 @@ jobs: # a collection of steps
 
     environment:
     # from https://discuss.circleci.com/t/circle-ci-v2-and-android-memory-issues/11207
-      JVM_OPTS: -Xmx2048m -XX:ParallelGCThreads=2 -XX:ConcGCThreads=2 -XX:ParallelGCThreads=2 -Djava.util.concurrent.ForkJoinPool.common.parallelism=2
+      JVM_OPTS: -Xmx4096m -XX:ParallelGCThreads=2 -XX:ConcGCThreads=2 -XX:ParallelGCThreads=2 -Djava.util.concurrent.ForkJoinPool.common.parallelism=2
 
     steps: # a collection of executable commands
 
