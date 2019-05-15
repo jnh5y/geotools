@@ -8,6 +8,10 @@ jobs: # a collection of steps
     #- image: circleci/openjdk:8-jdk-browsers # ...with this image as the primary container; this is where all `steps` will run
       - image: maven:3.3.9-jdk-8 #circleci/openjdk:8u171-jdk 
 
+    environment:
+    # from https://discuss.circleci.com/t/circle-ci-v2-and-android-memory-issues/11207
+      JVM_OPTS: -Xmx1024m -XX:ParallelGCThreads=2 -XX:ConcGCThreads=2 -XX:ParallelGCThreads=2 -Djava.util.concurrent.ForkJoinPool.common.parallelism=2
+
     steps: # a collection of executable commands
 
       - checkout # check out source code to working directory
