@@ -1084,6 +1084,7 @@ public class Hints extends RenderingHints {
      * @throws IllegalArgumentException if a value is illegal.
      */
     private void fromPairs(final Object... pairs) throws IllegalArgumentException {
+        // JNH: Unwrap here?
         if ((pairs.length & 1) != 0) {
             throw new IllegalArgumentException(
                     Errors.format(ErrorKeys.ODD_ARRAY_LENGTH_$1, pairs.length));

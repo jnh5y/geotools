@@ -793,7 +793,7 @@ public class DataUtilities {
      * @throws ArrayIndexOutOfBoundsException If the number of provided values does not match the
      *     featureType
      */
-    public static SimpleFeature template(SimpleFeatureType featureType, Object... providedValues) {
+    public static SimpleFeature template(SimpleFeatureType featureType, Object[] providedValues) {
         return SimpleFeatureBuilder.build(
                 featureType, defaultValues(featureType, providedValues), null);
     }
@@ -808,7 +808,7 @@ public class DataUtilities {
      *     featureType
      */
     public static SimpleFeature template(
-            SimpleFeatureType featureType, String featureID, Object... providedValues) {
+            SimpleFeatureType featureType, String featureID, Object[] providedValues) {
         return SimpleFeatureBuilder.build(
                 featureType, defaultValues(featureType, providedValues), featureID);
     }
@@ -820,7 +820,7 @@ public class DataUtilities {
      * @throws ArrayIndexOutOfBoundsException If the number of provided values does not match the
      *     featureType
      */
-    public static Object[] defaultValues(SimpleFeatureType featureType, Object... values) {
+    public static Object[] defaultValues(SimpleFeatureType featureType, Object[] values) {
         if (values == null) {
             values = new Object[featureType.getAttributeCount()];
         } else if (values.length != featureType.getAttributeCount()) {

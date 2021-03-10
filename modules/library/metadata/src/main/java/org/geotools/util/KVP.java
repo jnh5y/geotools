@@ -38,6 +38,7 @@ public class KVP extends LinkedHashMap<String, Object> {
      * <p>Example: <code>KVP map = new KVP("foo",1,"bar,2);</code>
      */
     public KVP(Object... pairs) {
+        pairs = Utilities.unwrapArray(pairs);
         if ((pairs.length & 1) != 0) {
             throw new IllegalArgumentException("Pairs was not an even number");
         }

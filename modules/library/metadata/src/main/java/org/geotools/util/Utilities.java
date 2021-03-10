@@ -777,4 +777,16 @@ public final class Utilities {
                             "Bad zip entry: ZipSlip extracting %s to %s", file, destinationDir));
         }
     }
+
+    /**
+     * Method unwrapping arrays of arrays.
+     * @param input Object...
+     * @return Initial input or if there's only one input which is an Array with only an Object[], that Object[].
+     */
+    public static Object[] unwrapArray(Object... input) {
+        if (input != null && input.length == 1 && input[0] instanceof Object[]) {
+            return (Object[])input[0];
+        }
+        return input;
+    }
 }

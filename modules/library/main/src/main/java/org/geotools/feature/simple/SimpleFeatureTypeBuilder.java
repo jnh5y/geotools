@@ -33,6 +33,7 @@ import org.geotools.feature.NameImpl;
 import org.geotools.feature.type.BasicFeatureTypes;
 import org.geotools.feature.type.FeatureTypeFactoryImpl;
 import org.geotools.referencing.CRS;
+import org.geotools.util.Utilities;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.opengis.feature.type.AttributeDescriptor;
@@ -416,6 +417,7 @@ public class SimpleFeatureTypeBuilder {
      * This restriction is reset after a call to {@link #add(String, Class)}
      */
     public SimpleFeatureTypeBuilder options(Object... options) {
+        options = Utilities.unwrapArray(options);
         attributeBuilder.setOptions(Arrays.asList(options));
         return this;
     }
