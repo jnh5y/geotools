@@ -25,6 +25,7 @@ import org.geotools.data.DataUtilities;
 import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.feature.FeatureBuilder;
 import org.geotools.feature.type.Types;
+import org.geotools.util.Utilities;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.feature.Feature;
 import org.opengis.feature.FeatureFactory;
@@ -324,8 +325,8 @@ public class SimpleFeatureBuilder extends FeatureBuilder<FeatureType, Feature> {
     }
 
     /** Quickly builds the feature using the specified values and id */
-    public SimpleFeature buildFeature(String id, Object[] values) {
-        addAll(values);
+    public SimpleFeature buildFeature(String id, Object... values) {
+        addAll(Utilities.unwrapArray(values));
         return buildFeature(id);
     }
 
