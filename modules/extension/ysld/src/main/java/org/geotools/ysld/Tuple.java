@@ -25,6 +25,7 @@ import java.util.Map;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.geotools.util.Utilities;
 import org.geotools.util.logging.Logging;
 import org.geotools.ysld.parse.Util;
 
@@ -35,6 +36,8 @@ public class Tuple {
 
     /** Return a tuple comprised of the passed values */
     public static Tuple of(Object... values) {
+        values = Utilities.unwrapArray(values);
+
         Tuple t = of(values.length);
         t.values = values;
         return t;

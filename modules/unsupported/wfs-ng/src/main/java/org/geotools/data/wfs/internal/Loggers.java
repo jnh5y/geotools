@@ -18,6 +18,7 @@ package org.geotools.data.wfs.internal;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.geotools.util.Utilities;
 import org.geotools.util.logging.Logging;
 
 /**
@@ -87,6 +88,8 @@ public final class Loggers {
         if (logger.isLoggable(level)) {
             // miss guava Joiner....
             StringBuilder sb = new StringBuilder();
+
+            message = Utilities.unwrapArray(message);
             for (Object part : message) {
                 sb.append(part);
             }

@@ -16,7 +16,6 @@
  */
 package org.geotools.feature.simple;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -124,7 +123,6 @@ public class SimpleFeatureBuilder extends FeatureBuilder<FeatureType, Feature> {
     Map<String, Integer> index;
 
     /** the values */
-    // List<Object> values;
     Object[] values;
 
     /** pointer for next attribute */
@@ -134,6 +132,7 @@ public class SimpleFeatureBuilder extends FeatureBuilder<FeatureType, Feature> {
 
     Map<Object, Object> featureUserData;
 
+    /** True to check attribute validation as values are added. */
     boolean validating;
 
     public SimpleFeatureBuilder(SimpleFeatureType featureType) {
@@ -205,15 +204,18 @@ public class SimpleFeatureBuilder extends FeatureBuilder<FeatureType, Feature> {
     }
 
     /** Adds a list of attributes. */
-    public void addAll(List<Object> values) {
-        for (Object value : values) {
+    public void addAll(List<Object> attributes) {
+        for (Object value : attributes) {
             add(value);
         }
     }
 
     /** Adds an array of attributes. */
-    public void addAll(Object[] values) {
-        addAll(Arrays.asList(values));
+    public void addAll(Object... attributes) {
+        attributes = Utilities.unwrapArray(attributes);
+        for (Object value : attributes) {
+            add(value);
+        }
     }
 
     /**
@@ -255,13 +257,13 @@ public class SimpleFeatureBuilder extends FeatureBuilder<FeatureType, Feature> {
      * @param value The value of the attribute.
      */
     public void set(int index, Object value) {
-        if (index >= values.length)
+        if (index >= this.values.length)
             throw new ArrayIndexOutOfBoundsException(
-                    "Can handle " + values.length + " attributes only, index is " + index);
+                    "Can handle " + this.values.length + " attributes only, index is " + index);
 
         AttributeDescriptor descriptor = featureType.getDescriptor(index);
-        values[index] = convert(value, descriptor);
-        if (validating) Types.validate(descriptor, values[index]);
+        this.values[index] = convert(value, descriptor);
+        if (validating) Types.validate(descriptor, this.values[index]);
     }
 
     private Object convert(Object value, AttributeDescriptor descriptor) {
@@ -326,7 +328,7 @@ public class SimpleFeatureBuilder extends FeatureBuilder<FeatureType, Feature> {
 
     /** Quickly builds the feature using the specified values and id */
     public SimpleFeature buildFeature(String id, Object... values) {
-        addAll(Utilities.unwrapArray(values));
+        addAll(values);
         return buildFeature(id);
     }
 

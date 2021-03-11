@@ -25,6 +25,7 @@ import javax.xml.namespace.QName;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
+import org.geotools.util.Utilities;
 import org.geotools.xsd.impl.ElementHandler;
 import org.geotools.xsd.impl.NodeImpl;
 import org.geotools.xsd.impl.ParserHandler;
@@ -312,6 +313,7 @@ public class PullParser {
 
         public OrPullParserHandler(Configuration config, Object... handlerSpecs) {
             super(config);
+            handlerSpecs = Utilities.unwrapArray(handlerSpecs);
             Collection<PullParserHandler> handlers = new ArrayList<>(handlerSpecs.length);
             for (Object spec : handlerSpecs) {
                 if (spec instanceof Class) {

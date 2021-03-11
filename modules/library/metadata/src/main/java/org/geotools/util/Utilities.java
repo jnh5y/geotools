@@ -779,9 +779,14 @@ public final class Utilities {
     }
 
     /**
-     * Method unwrapping arrays of arrays.
+     * Unwrap an an arrays of arrays, used for methods accepting variable arguments.
      *
-     * @param input Object...
+     * <p>Some environments have difficulty passing an Object[] as a variable argument and end up
+     * accidentally encoding <code>function(value1, value2)<code> as
+     * </code></code>as <code>Object[]{ Object[]{value1,value2}}</code>. This method detects this
+     * mistake and returns the expected <code>Object[]{value1,value2}</code> data structure.
+     *
+     * @param input Object... Variable object parameters
      * @return Initial input or if there's only one input which is an Array with only an Object[],
      *     that Object[].
      */

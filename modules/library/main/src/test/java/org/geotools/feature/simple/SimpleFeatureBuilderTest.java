@@ -67,6 +67,26 @@ public class SimpleFeatureBuilderTest {
     }
 
     @Test
+    public void testAddAll() throws Exception {
+        GeometryFactory gf = new GeometryFactory();
+        // variable arguments use
+        builder.addAll(gf.createPoint(new Coordinate(0, 0)), 1, 2.0f);
+
+        SimpleFeature feature = builder.buildFeature("fid");
+        Assert.assertNotNull(feature);
+        Assert.assertEquals(3, feature.getAttributeCount());
+        Assert.assertEquals(gf.createPoint(new Coordinate(0, 0)), feature.getAttribute("point"));
+        Assert.assertEquals(Integer.valueOf(1), feature.getAttribute("integer"));
+        Assert.assertEquals(Float.valueOf(2.0f), feature.getAttribute("float"));
+
+        // fix incorrectly encoded variable arguments use
+        Object[] array = new Object[] {gf.createPoint(new Coordinate(0, 0)), 1, 2.0f};
+        builder.addAll(new Object[] {array});
+        SimpleFeature feature2 = builder.buildFeature("fid");
+        Assert.assertEquals(feature, feature2);
+    }
+
+    @Test
     public void testTooFewAttributes() throws Exception {
         GeometryFactory gf = new GeometryFactory();
         builder.add(gf.createPoint(new Coordinate(0, 0)));
